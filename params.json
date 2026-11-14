@@ -1,0 +1,8134 @@
+{
+ "name": "MANTRA",
+ "params": [
+  {
+   "key": "a_level",
+   "name": "A LEVEL",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.8,
+   "dynamic_display": true
+  },
+  {
+   "key": "a_pan",
+   "name": "A PAN",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "a_bypass",
+   "name": "A BYPASS",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "a_slot1",
+   "name": "A SLOT 1",
+   "options": [
+    "Filter",
+    "Distortion",
+    "Delay",
+    "Lo-Fi",
+    "Flanger",
+    "Glitch"
+   ],
+   "default": 0
+  },
+  {
+   "key": "a_slot2",
+   "name": "A SLOT 2",
+   "options": [
+    "Filter",
+    "Distortion",
+    "Delay",
+    "Lo-Fi",
+    "Flanger",
+    "Glitch"
+   ],
+   "default": 1
+  },
+  {
+   "key": "a_slot3",
+   "name": "A SLOT 3",
+   "options": [
+    "Filter",
+    "Distortion",
+    "Delay",
+    "Lo-Fi",
+    "Flanger",
+    "Glitch"
+   ],
+   "default": 2
+  },
+  {
+   "key": "a_slot4",
+   "name": "A SLOT 4",
+   "options": [
+    "Filter",
+    "Distortion",
+    "Delay",
+    "Lo-Fi",
+    "Flanger",
+    "Glitch"
+   ],
+   "default": 3
+  },
+  {
+   "key": "a_slot5",
+   "name": "A SLOT 5",
+   "options": [
+    "Filter",
+    "Distortion",
+    "Delay",
+    "Lo-Fi",
+    "Flanger",
+    "Glitch"
+   ],
+   "default": 4
+  },
+  {
+   "key": "a_slot6",
+   "name": "A SLOT 6",
+   "options": [
+    "Filter",
+    "Distortion",
+    "Delay",
+    "Lo-Fi",
+    "Flanger",
+    "Glitch"
+   ],
+   "default": 5
+  },
+  {
+   "key": "a_fimix",
+   "name": "A FLT MIX",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "a_fibyp",
+   "name": "A BYPASS",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "a_fitype",
+   "name": "A FLT TYPE",
+   "options": [
+    "Clean LP 12",
+    "Clean LP 42",
+    "Clean BP 12",
+    "Clean BP 42",
+    "Clean HP 12",
+    "Clean HP 42",
+    "Dark LP 12",
+    "Dark LP 42",
+    "Dark BP 12",
+    "Dark BP 42",
+    "Dark HP 12",
+    "Dark HP 42",
+    "Legacy LP 12",
+    "Legacy LP 24",
+    "Legacy BP 12",
+    "Legacy BP 24",
+    "Legacy HP 12",
+    "Legacy HP 24",
+    "Phaser 4p",
+    "Phaser 8p",
+    "RingMod",
+    "PitchShift",
+    "OctaveBand",
+    "Vowel"
+   ],
+   "default": 0
+  },
+  {
+   "key": "a_ficut",
+   "name": "A CUTOFF",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.587749,
+   "dynamic_display": true
+  },
+  {
+   "key": "a_fires",
+   "name": "A FLT RES",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.25,
+   "dynamic_display": true
+  },
+  {
+   "key": "a_filow",
+   "name": "A LOW CUT",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "a_fihi",
+   "name": "A HI CUT",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "a_dimix",
+   "name": "A DST MIX",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "a_dibyp",
+   "name": "A BYPASS",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "a_didrive",
+   "name": "A DRIVE",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.4,
+   "dynamic_display": true
+  },
+  {
+   "key": "a_difuzz",
+   "name": "A DST FUZZ",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "a_ditype",
+   "name": "A DST TYPE",
+   "options": [
+    "Soft",
+    "Hard",
+    "Fold",
+    "Tube"
+   ],
+   "default": 0
+  },
+  {
+   "key": "a_dimono",
+   "name": "A DST MONO",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "a_ditone",
+   "name": "A DST TONE",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "a_diout",
+   "name": "A OUTPUT",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.666667,
+   "dynamic_display": true
+  },
+  {
+   "key": "a_demix",
+   "name": "A DLY MIX",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.4,
+   "dynamic_display": true
+  },
+  {
+   "key": "a_debyp",
+   "name": "A BYPASS",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "a_del",
+   "name": "A SPEED L",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.572482,
+   "dynamic_display": true
+  },
+  {
+   "key": "a_der",
+   "name": "A SPEED R",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.630136,
+   "dynamic_display": true
+  },
+  {
+   "key": "a_dels",
+   "name": "A DIV L",
+   "options": [
+    "8 bars",
+    "4 bars",
+    "3 bars",
+    "2 bars",
+    "1.5 bars",
+    "1 bar",
+    "1/2.",
+    "1/2",
+    "1/4.",
+    "1/2T",
+    "1/4",
+    "1/8.",
+    "1/4T",
+    "1/8",
+    "1/16.",
+    "1/8T",
+    "1/16",
+    "1/32.",
+    "1/16T",
+    "1/32",
+    "1/32T",
+    "1/64"
+   ],
+   "default": 13
+  },
+  {
+   "key": "a_ders",
+   "name": "A DIV R",
+   "options": [
+    "8 bars",
+    "4 bars",
+    "3 bars",
+    "2 bars",
+    "1.5 bars",
+    "1 bar",
+    "1/2.",
+    "1/2",
+    "1/4.",
+    "1/2T",
+    "1/4",
+    "1/8.",
+    "1/4T",
+    "1/8",
+    "1/16.",
+    "1/8T",
+    "1/16",
+    "1/32.",
+    "1/16T",
+    "1/32",
+    "1/32T",
+    "1/64"
+   ],
+   "default": 13
+  },
+  {
+   "key": "a_desync",
+   "name": "A DLY SYNC",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 1
+  },
+  {
+   "key": "a_deping",
+   "name": "A DLY PING",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "a_defb",
+   "name": "A FDBACK",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.4,
+   "dynamic_display": true
+  },
+  {
+   "key": "a_delp",
+   "name": "A DLY LP",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.718848,
+   "dynamic_display": true
+  },
+  {
+   "key": "a_debp",
+   "name": "A DLY BP",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "a_dein",
+   "name": "A DLY IN",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "a_lomix",
+   "name": "A LOF MIX",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "a_lobyp",
+   "name": "A BYPASS",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "a_lobit",
+   "name": "A LOF BIT",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "a_lorate",
+   "name": "A LOF RATE",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "a_lonoise",
+   "name": "A NOISE",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "a_lotone",
+   "name": "A LOF TONE",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "a_flmix",
+   "name": "A FLG MIX",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "a_flbyp",
+   "name": "A BYPASS",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "a_flmode",
+   "name": "A FLG MODE",
+   "options": [
+    "Flanger",
+    "Phaser"
+   ],
+   "default": 0
+  },
+  {
+   "key": "a_fldelay",
+   "name": "A DELAY",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "a_flfb",
+   "name": "A FDBACK",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.710526,
+   "dynamic_display": true
+  },
+  {
+   "key": "a_flwidth",
+   "name": "A WIDTH",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "a_fltone",
+   "name": "A FLG TONE",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.7,
+   "dynamic_display": true
+  },
+  {
+   "key": "a_flspeed",
+   "name": "A SPEED",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.40214,
+   "dynamic_display": true
+  },
+  {
+   "key": "a_fldiv",
+   "name": "A SYNC DIV",
+   "options": [
+    "8 bars",
+    "4 bars",
+    "3 bars",
+    "2 bars",
+    "1.5 bars",
+    "1 bar",
+    "1/2.",
+    "1/2",
+    "1/4.",
+    "1/2T",
+    "1/4",
+    "1/8.",
+    "1/4T",
+    "1/8",
+    "1/16.",
+    "1/8T",
+    "1/16",
+    "1/32.",
+    "1/16T",
+    "1/32",
+    "1/32T",
+    "1/64"
+   ],
+   "default": 5
+  },
+  {
+   "key": "a_flsync",
+   "name": "A FLG SYNC",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "a_fldepth",
+   "name": "A DEPTH",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.6,
+   "dynamic_display": true
+  },
+  {
+   "key": "a_glmix",
+   "name": "A GLT MIX",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "a_glbyp",
+   "name": "A BYPASS",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "a_glmode",
+   "name": "A GLT MODE",
+   "options": [
+    "Run",
+    "Freeze"
+   ],
+   "default": 0
+  },
+  {
+   "key": "a_glsize",
+   "name": "A BUFFER",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.529,
+   "dynamic_display": true
+  },
+  {
+   "key": "a_glscale",
+   "name": "A SCALE",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "a_glrev",
+   "name": "A REVERSE",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "a_glsmooth",
+   "name": "A SMOOTH",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.3,
+   "dynamic_display": true
+  },
+  {
+   "key": "a_glstretch",
+   "name": "A STRETCH",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "b_level",
+   "name": "B LEVEL",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.8,
+   "dynamic_display": true
+  },
+  {
+   "key": "b_pan",
+   "name": "B PAN",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "b_bypass",
+   "name": "B BYPASS",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "b_slot1",
+   "name": "B SLOT 1",
+   "options": [
+    "Filter",
+    "Distortion",
+    "Delay",
+    "Lo-Fi",
+    "Flanger",
+    "Glitch"
+   ],
+   "default": 0
+  },
+  {
+   "key": "b_slot2",
+   "name": "B SLOT 2",
+   "options": [
+    "Filter",
+    "Distortion",
+    "Delay",
+    "Lo-Fi",
+    "Flanger",
+    "Glitch"
+   ],
+   "default": 1
+  },
+  {
+   "key": "b_slot3",
+   "name": "B SLOT 3",
+   "options": [
+    "Filter",
+    "Distortion",
+    "Delay",
+    "Lo-Fi",
+    "Flanger",
+    "Glitch"
+   ],
+   "default": 2
+  },
+  {
+   "key": "b_slot4",
+   "name": "B SLOT 4",
+   "options": [
+    "Filter",
+    "Distortion",
+    "Delay",
+    "Lo-Fi",
+    "Flanger",
+    "Glitch"
+   ],
+   "default": 3
+  },
+  {
+   "key": "b_slot5",
+   "name": "B SLOT 5",
+   "options": [
+    "Filter",
+    "Distortion",
+    "Delay",
+    "Lo-Fi",
+    "Flanger",
+    "Glitch"
+   ],
+   "default": 4
+  },
+  {
+   "key": "b_slot6",
+   "name": "B SLOT 6",
+   "options": [
+    "Filter",
+    "Distortion",
+    "Delay",
+    "Lo-Fi",
+    "Flanger",
+    "Glitch"
+   ],
+   "default": 5
+  },
+  {
+   "key": "b_fimix",
+   "name": "B FLT MIX",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "b_fibyp",
+   "name": "B BYPASS",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "b_fitype",
+   "name": "B FLT TYPE",
+   "options": [
+    "Clean LP 12",
+    "Clean LP 42",
+    "Clean BP 12",
+    "Clean BP 42",
+    "Clean HP 12",
+    "Clean HP 42",
+    "Dark LP 12",
+    "Dark LP 42",
+    "Dark BP 12",
+    "Dark BP 42",
+    "Dark HP 12",
+    "Dark HP 42",
+    "Legacy LP 12",
+    "Legacy LP 24",
+    "Legacy BP 12",
+    "Legacy BP 24",
+    "Legacy HP 12",
+    "Legacy HP 24",
+    "Phaser 4p",
+    "Phaser 8p",
+    "RingMod",
+    "PitchShift",
+    "OctaveBand",
+    "Vowel"
+   ],
+   "default": 0
+  },
+  {
+   "key": "b_ficut",
+   "name": "B CUTOFF",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.587749,
+   "dynamic_display": true
+  },
+  {
+   "key": "b_fires",
+   "name": "B FLT RES",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.25,
+   "dynamic_display": true
+  },
+  {
+   "key": "b_filow",
+   "name": "B LOW CUT",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "b_fihi",
+   "name": "B HI CUT",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "b_dimix",
+   "name": "B DST MIX",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "b_dibyp",
+   "name": "B BYPASS",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "b_didrive",
+   "name": "B DRIVE",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.4,
+   "dynamic_display": true
+  },
+  {
+   "key": "b_difuzz",
+   "name": "B DST FUZZ",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "b_ditype",
+   "name": "B DST TYPE",
+   "options": [
+    "Soft",
+    "Hard",
+    "Fold",
+    "Tube"
+   ],
+   "default": 0
+  },
+  {
+   "key": "b_dimono",
+   "name": "B DST MONO",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "b_ditone",
+   "name": "B DST TONE",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "b_diout",
+   "name": "B OUTPUT",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.666667,
+   "dynamic_display": true
+  },
+  {
+   "key": "b_demix",
+   "name": "B DLY MIX",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.4,
+   "dynamic_display": true
+  },
+  {
+   "key": "b_debyp",
+   "name": "B BYPASS",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "b_del",
+   "name": "B SPEED L",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.572482,
+   "dynamic_display": true
+  },
+  {
+   "key": "b_der",
+   "name": "B SPEED R",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.630136,
+   "dynamic_display": true
+  },
+  {
+   "key": "b_dels",
+   "name": "B DIV L",
+   "options": [
+    "8 bars",
+    "4 bars",
+    "3 bars",
+    "2 bars",
+    "1.5 bars",
+    "1 bar",
+    "1/2.",
+    "1/2",
+    "1/4.",
+    "1/2T",
+    "1/4",
+    "1/8.",
+    "1/4T",
+    "1/8",
+    "1/16.",
+    "1/8T",
+    "1/16",
+    "1/32.",
+    "1/16T",
+    "1/32",
+    "1/32T",
+    "1/64"
+   ],
+   "default": 13
+  },
+  {
+   "key": "b_ders",
+   "name": "B DIV R",
+   "options": [
+    "8 bars",
+    "4 bars",
+    "3 bars",
+    "2 bars",
+    "1.5 bars",
+    "1 bar",
+    "1/2.",
+    "1/2",
+    "1/4.",
+    "1/2T",
+    "1/4",
+    "1/8.",
+    "1/4T",
+    "1/8",
+    "1/16.",
+    "1/8T",
+    "1/16",
+    "1/32.",
+    "1/16T",
+    "1/32",
+    "1/32T",
+    "1/64"
+   ],
+   "default": 13
+  },
+  {
+   "key": "b_desync",
+   "name": "B DLY SYNC",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 1
+  },
+  {
+   "key": "b_deping",
+   "name": "B DLY PING",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "b_defb",
+   "name": "B FDBACK",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.4,
+   "dynamic_display": true
+  },
+  {
+   "key": "b_delp",
+   "name": "B DLY LP",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.718848,
+   "dynamic_display": true
+  },
+  {
+   "key": "b_debp",
+   "name": "B DLY BP",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "b_dein",
+   "name": "B DLY IN",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "b_lomix",
+   "name": "B LOF MIX",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "b_lobyp",
+   "name": "B BYPASS",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "b_lobit",
+   "name": "B LOF BIT",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "b_lorate",
+   "name": "B LOF RATE",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "b_lonoise",
+   "name": "B NOISE",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "b_lotone",
+   "name": "B LOF TONE",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "b_flmix",
+   "name": "B FLG MIX",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "b_flbyp",
+   "name": "B BYPASS",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "b_flmode",
+   "name": "B FLG MODE",
+   "options": [
+    "Flanger",
+    "Phaser"
+   ],
+   "default": 0
+  },
+  {
+   "key": "b_fldelay",
+   "name": "B DELAY",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "b_flfb",
+   "name": "B FDBACK",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.710526,
+   "dynamic_display": true
+  },
+  {
+   "key": "b_flwidth",
+   "name": "B WIDTH",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "b_fltone",
+   "name": "B FLG TONE",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.7,
+   "dynamic_display": true
+  },
+  {
+   "key": "b_flspeed",
+   "name": "B SPEED",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.40214,
+   "dynamic_display": true
+  },
+  {
+   "key": "b_fldiv",
+   "name": "B SYNC DIV",
+   "options": [
+    "8 bars",
+    "4 bars",
+    "3 bars",
+    "2 bars",
+    "1.5 bars",
+    "1 bar",
+    "1/2.",
+    "1/2",
+    "1/4.",
+    "1/2T",
+    "1/4",
+    "1/8.",
+    "1/4T",
+    "1/8",
+    "1/16.",
+    "1/8T",
+    "1/16",
+    "1/32.",
+    "1/16T",
+    "1/32",
+    "1/32T",
+    "1/64"
+   ],
+   "default": 5
+  },
+  {
+   "key": "b_flsync",
+   "name": "B FLG SYNC",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "b_fldepth",
+   "name": "B DEPTH",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.6,
+   "dynamic_display": true
+  },
+  {
+   "key": "b_glmix",
+   "name": "B GLT MIX",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "b_glbyp",
+   "name": "B BYPASS",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "b_glmode",
+   "name": "B GLT MODE",
+   "options": [
+    "Run",
+    "Freeze"
+   ],
+   "default": 0
+  },
+  {
+   "key": "b_glsize",
+   "name": "B BUFFER",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.529,
+   "dynamic_display": true
+  },
+  {
+   "key": "b_glscale",
+   "name": "B SCALE",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "b_glrev",
+   "name": "B REVERSE",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "b_glsmooth",
+   "name": "B SMOOTH",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.3,
+   "dynamic_display": true
+  },
+  {
+   "key": "b_glstretch",
+   "name": "B STRETCH",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "g_routing",
+   "name": "ROUTING",
+   "options": [
+    "Serial",
+    "Parallel"
+   ],
+   "default": 0
+  },
+  {
+   "key": "g_speed",
+   "name": "MOD SPEED",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "g_bpm",
+   "name": "BPM",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "g_eqon",
+   "name": "EQ ON",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 1
+  },
+  {
+   "key": "g_eqbass",
+   "name": "EQ BASS",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "g_eqmid",
+   "name": "EQ MID",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "g_eqfreq",
+   "name": "EQ FREQ",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "g_eqtreble",
+   "name": "EQ TREBLE",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "g_rvon",
+   "name": "VERB ON",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 1
+  },
+  {
+   "key": "g_rvsize",
+   "name": "VERB SIZE",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "g_rvdecay",
+   "name": "VERB DECAY",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "g_rvmix",
+   "name": "VERB MIX",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.2,
+   "dynamic_display": true
+  },
+  {
+   "key": "g_rvbass",
+   "name": "VERB BASS",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "g_rvtreble",
+   "name": "VERB TREB",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "g_rvin",
+   "name": "VERB IN",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "g_outvol",
+   "name": "OUT VOL",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.666667,
+   "dynamic_display": true
+  },
+  {
+   "key": "g_outpan",
+   "name": "OUT PAN",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "g_outmix",
+   "name": "OUT MIX",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "g_outclip",
+   "name": "CLIPPER",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 1
+  },
+  {
+   "key": "g_masteron",
+   "name": "MASTER ON",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 1
+  },
+  {
+   "key": "g_stepwrite",
+   "name": "STEPWRITE",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "poll": false
+  },
+  {
+   "key": "m1_mode",
+   "name": "M1 MODE",
+   "options": [
+    "Steps",
+    "Curve"
+   ],
+   "default": 0
+  },
+  {
+   "key": "m1_sync",
+   "name": "M1 SYNC",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 1
+  },
+  {
+   "key": "m1_speed",
+   "name": "M1 SPEED",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.416604,
+   "dynamic_display": true
+  },
+  {
+   "key": "m1_div",
+   "name": "SYNC DIV",
+   "options": [
+    "8 bars",
+    "4 bars",
+    "3 bars",
+    "2 bars",
+    "1.5 bars",
+    "1 bar",
+    "1/2.",
+    "1/2",
+    "1/4.",
+    "1/2T",
+    "1/4",
+    "1/8.",
+    "1/4T",
+    "1/8",
+    "1/16.",
+    "1/8T",
+    "1/16",
+    "1/32.",
+    "1/16T",
+    "1/32",
+    "1/32T",
+    "1/64"
+   ],
+   "default": 5
+  },
+  {
+   "key": "m1_steps",
+   "name": "M1 STEPS",
+   "min": 2.0,
+   "max": 32.0,
+   "default": 16.0,
+   "display": "int",
+   "dynamic_display": true
+  },
+  {
+   "key": "m1_gate",
+   "name": "M1 GATE",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m1_smooth",
+   "name": "M1 SMOOTH",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m1_shuffle",
+   "name": "M1 SHUFFLE",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m1_tension",
+   "name": "M1 TENSION",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "m1_invert",
+   "name": "M1 INVERT",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "m1_shift",
+   "name": "M1 SHIFT",
+   "min": 0.0,
+   "max": 31.0,
+   "default": 0.0,
+   "display": "int",
+   "dynamic_display": true
+  },
+  {
+   "key": "m1_tremdepth",
+   "name": "M1 TREM",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m1_tremdest",
+   "name": "M1 TREM TO",
+   "options": [
+    "Off",
+    "Global",
+    "Layer A",
+    "Layer B"
+   ],
+   "default": 0
+  },
+  {
+   "key": "m1_flipdepth",
+   "name": "M1 FLIP",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m1_flipdest",
+   "name": "M1 FLIP TO",
+   "options": [
+    "Off",
+    "Global",
+    "Layer A",
+    "Layer B"
+   ],
+   "default": 0
+  },
+  {
+   "key": "m2_mode",
+   "name": "M2 MODE",
+   "options": [
+    "Steps",
+    "Curve"
+   ],
+   "default": 0
+  },
+  {
+   "key": "m2_sync",
+   "name": "M2 SYNC",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 1
+  },
+  {
+   "key": "m2_speed",
+   "name": "M2 SPEED",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.416604,
+   "dynamic_display": true
+  },
+  {
+   "key": "m2_div",
+   "name": "SYNC DIV",
+   "options": [
+    "8 bars",
+    "4 bars",
+    "3 bars",
+    "2 bars",
+    "1.5 bars",
+    "1 bar",
+    "1/2.",
+    "1/2",
+    "1/4.",
+    "1/2T",
+    "1/4",
+    "1/8.",
+    "1/4T",
+    "1/8",
+    "1/16.",
+    "1/8T",
+    "1/16",
+    "1/32.",
+    "1/16T",
+    "1/32",
+    "1/32T",
+    "1/64"
+   ],
+   "default": 5
+  },
+  {
+   "key": "m2_steps",
+   "name": "M2 STEPS",
+   "min": 2.0,
+   "max": 32.0,
+   "default": 16.0,
+   "display": "int",
+   "dynamic_display": true
+  },
+  {
+   "key": "m2_gate",
+   "name": "M2 GATE",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m2_smooth",
+   "name": "M2 SMOOTH",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m2_shuffle",
+   "name": "M2 SHUFFLE",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m2_tension",
+   "name": "M2 TENSION",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "m2_invert",
+   "name": "M2 INVERT",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "m2_shift",
+   "name": "M2 SHIFT",
+   "min": 0.0,
+   "max": 31.0,
+   "default": 0.0,
+   "display": "int",
+   "dynamic_display": true
+  },
+  {
+   "key": "m2_tremdepth",
+   "name": "M2 TREM",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m2_tremdest",
+   "name": "M2 TREM TO",
+   "options": [
+    "Off",
+    "Global",
+    "Layer A",
+    "Layer B"
+   ],
+   "default": 0
+  },
+  {
+   "key": "m2_flipdepth",
+   "name": "M2 FLIP",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m2_flipdest",
+   "name": "M2 FLIP TO",
+   "options": [
+    "Off",
+    "Global",
+    "Layer A",
+    "Layer B"
+   ],
+   "default": 0
+  },
+  {
+   "key": "m3_mode",
+   "name": "M3 MODE",
+   "options": [
+    "Steps",
+    "Curve"
+   ],
+   "default": 0
+  },
+  {
+   "key": "m3_sync",
+   "name": "M3 SYNC",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 1
+  },
+  {
+   "key": "m3_speed",
+   "name": "M3 SPEED",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.416604,
+   "dynamic_display": true
+  },
+  {
+   "key": "m3_div",
+   "name": "SYNC DIV",
+   "options": [
+    "8 bars",
+    "4 bars",
+    "3 bars",
+    "2 bars",
+    "1.5 bars",
+    "1 bar",
+    "1/2.",
+    "1/2",
+    "1/4.",
+    "1/2T",
+    "1/4",
+    "1/8.",
+    "1/4T",
+    "1/8",
+    "1/16.",
+    "1/8T",
+    "1/16",
+    "1/32.",
+    "1/16T",
+    "1/32",
+    "1/32T",
+    "1/64"
+   ],
+   "default": 5
+  },
+  {
+   "key": "m3_steps",
+   "name": "M3 STEPS",
+   "min": 2.0,
+   "max": 32.0,
+   "default": 16.0,
+   "display": "int",
+   "dynamic_display": true
+  },
+  {
+   "key": "m3_gate",
+   "name": "M3 GATE",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m3_smooth",
+   "name": "M3 SMOOTH",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m3_shuffle",
+   "name": "M3 SHUFFLE",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m3_tension",
+   "name": "M3 TENSION",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "m3_invert",
+   "name": "M3 INVERT",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "m3_shift",
+   "name": "M3 SHIFT",
+   "min": 0.0,
+   "max": 31.0,
+   "default": 0.0,
+   "display": "int",
+   "dynamic_display": true
+  },
+  {
+   "key": "m3_tremdepth",
+   "name": "M3 TREM",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m3_tremdest",
+   "name": "M3 TREM TO",
+   "options": [
+    "Off",
+    "Global",
+    "Layer A",
+    "Layer B"
+   ],
+   "default": 0
+  },
+  {
+   "key": "m3_flipdepth",
+   "name": "M3 FLIP",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m3_flipdest",
+   "name": "M3 FLIP TO",
+   "options": [
+    "Off",
+    "Global",
+    "Layer A",
+    "Layer B"
+   ],
+   "default": 0
+  },
+  {
+   "key": "m4_mode",
+   "name": "M4 MODE",
+   "options": [
+    "Steps",
+    "Curve"
+   ],
+   "default": 0
+  },
+  {
+   "key": "m4_sync",
+   "name": "M4 SYNC",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 1
+  },
+  {
+   "key": "m4_speed",
+   "name": "M4 SPEED",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.416604,
+   "dynamic_display": true
+  },
+  {
+   "key": "m4_div",
+   "name": "SYNC DIV",
+   "options": [
+    "8 bars",
+    "4 bars",
+    "3 bars",
+    "2 bars",
+    "1.5 bars",
+    "1 bar",
+    "1/2.",
+    "1/2",
+    "1/4.",
+    "1/2T",
+    "1/4",
+    "1/8.",
+    "1/4T",
+    "1/8",
+    "1/16.",
+    "1/8T",
+    "1/16",
+    "1/32.",
+    "1/16T",
+    "1/32",
+    "1/32T",
+    "1/64"
+   ],
+   "default": 5
+  },
+  {
+   "key": "m4_steps",
+   "name": "M4 STEPS",
+   "min": 2.0,
+   "max": 32.0,
+   "default": 16.0,
+   "display": "int",
+   "dynamic_display": true
+  },
+  {
+   "key": "m4_gate",
+   "name": "M4 GATE",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m4_smooth",
+   "name": "M4 SMOOTH",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m4_shuffle",
+   "name": "M4 SHUFFLE",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m4_tension",
+   "name": "M4 TENSION",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "m4_invert",
+   "name": "M4 INVERT",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "m4_shift",
+   "name": "M4 SHIFT",
+   "min": 0.0,
+   "max": 31.0,
+   "default": 0.0,
+   "display": "int",
+   "dynamic_display": true
+  },
+  {
+   "key": "m4_tremdepth",
+   "name": "M4 TREM",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m4_tremdest",
+   "name": "M4 TREM TO",
+   "options": [
+    "Off",
+    "Global",
+    "Layer A",
+    "Layer B"
+   ],
+   "default": 0
+  },
+  {
+   "key": "m4_flipdepth",
+   "name": "M4 FLIP",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m4_flipdest",
+   "name": "M4 FLIP TO",
+   "options": [
+    "Off",
+    "Global",
+    "Layer A",
+    "Layer B"
+   ],
+   "default": 0
+  },
+  {
+   "key": "m5_mode",
+   "name": "M5 MODE",
+   "options": [
+    "Steps",
+    "Curve"
+   ],
+   "default": 0
+  },
+  {
+   "key": "m5_sync",
+   "name": "M5 SYNC",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 1
+  },
+  {
+   "key": "m5_speed",
+   "name": "M5 SPEED",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.416604,
+   "dynamic_display": true
+  },
+  {
+   "key": "m5_div",
+   "name": "SYNC DIV",
+   "options": [
+    "8 bars",
+    "4 bars",
+    "3 bars",
+    "2 bars",
+    "1.5 bars",
+    "1 bar",
+    "1/2.",
+    "1/2",
+    "1/4.",
+    "1/2T",
+    "1/4",
+    "1/8.",
+    "1/4T",
+    "1/8",
+    "1/16.",
+    "1/8T",
+    "1/16",
+    "1/32.",
+    "1/16T",
+    "1/32",
+    "1/32T",
+    "1/64"
+   ],
+   "default": 5
+  },
+  {
+   "key": "m5_steps",
+   "name": "M5 STEPS",
+   "min": 2.0,
+   "max": 32.0,
+   "default": 16.0,
+   "display": "int",
+   "dynamic_display": true
+  },
+  {
+   "key": "m5_gate",
+   "name": "M5 GATE",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m5_smooth",
+   "name": "M5 SMOOTH",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m5_shuffle",
+   "name": "M5 SHUFFLE",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m5_tension",
+   "name": "M5 TENSION",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "m5_invert",
+   "name": "M5 INVERT",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "m5_shift",
+   "name": "M5 SHIFT",
+   "min": 0.0,
+   "max": 31.0,
+   "default": 0.0,
+   "display": "int",
+   "dynamic_display": true
+  },
+  {
+   "key": "m5_tremdepth",
+   "name": "M5 TREM",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m5_tremdest",
+   "name": "M5 TREM TO",
+   "options": [
+    "Off",
+    "Global",
+    "Layer A",
+    "Layer B"
+   ],
+   "default": 0
+  },
+  {
+   "key": "m5_flipdepth",
+   "name": "M5 FLIP",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m5_flipdest",
+   "name": "M5 FLIP TO",
+   "options": [
+    "Off",
+    "Global",
+    "Layer A",
+    "Layer B"
+   ],
+   "default": 0
+  },
+  {
+   "key": "m6_mode",
+   "name": "M6 MODE",
+   "options": [
+    "Steps",
+    "Curve"
+   ],
+   "default": 0
+  },
+  {
+   "key": "m6_sync",
+   "name": "M6 SYNC",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 1
+  },
+  {
+   "key": "m6_speed",
+   "name": "M6 SPEED",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.416604,
+   "dynamic_display": true
+  },
+  {
+   "key": "m6_div",
+   "name": "SYNC DIV",
+   "options": [
+    "8 bars",
+    "4 bars",
+    "3 bars",
+    "2 bars",
+    "1.5 bars",
+    "1 bar",
+    "1/2.",
+    "1/2",
+    "1/4.",
+    "1/2T",
+    "1/4",
+    "1/8.",
+    "1/4T",
+    "1/8",
+    "1/16.",
+    "1/8T",
+    "1/16",
+    "1/32.",
+    "1/16T",
+    "1/32",
+    "1/32T",
+    "1/64"
+   ],
+   "default": 5
+  },
+  {
+   "key": "m6_steps",
+   "name": "M6 STEPS",
+   "min": 2.0,
+   "max": 32.0,
+   "default": 16.0,
+   "display": "int",
+   "dynamic_display": true
+  },
+  {
+   "key": "m6_gate",
+   "name": "M6 GATE",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m6_smooth",
+   "name": "M6 SMOOTH",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m6_shuffle",
+   "name": "M6 SHUFFLE",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m6_tension",
+   "name": "M6 TENSION",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "m6_invert",
+   "name": "M6 INVERT",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "m6_shift",
+   "name": "M6 SHIFT",
+   "min": 0.0,
+   "max": 31.0,
+   "default": 0.0,
+   "display": "int",
+   "dynamic_display": true
+  },
+  {
+   "key": "m6_tremdepth",
+   "name": "M6 TREM",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m6_tremdest",
+   "name": "M6 TREM TO",
+   "options": [
+    "Off",
+    "Global",
+    "Layer A",
+    "Layer B"
+   ],
+   "default": 0
+  },
+  {
+   "key": "m6_flipdepth",
+   "name": "M6 FLIP",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m6_flipdest",
+   "name": "M6 FLIP TO",
+   "options": [
+    "Off",
+    "Global",
+    "Layer A",
+    "Layer B"
+   ],
+   "default": 0
+  },
+  {
+   "key": "m7_mode",
+   "name": "M7 MODE",
+   "options": [
+    "Steps",
+    "Curve"
+   ],
+   "default": 0
+  },
+  {
+   "key": "m7_sync",
+   "name": "M7 SYNC",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 1
+  },
+  {
+   "key": "m7_speed",
+   "name": "M7 SPEED",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.416604,
+   "dynamic_display": true
+  },
+  {
+   "key": "m7_div",
+   "name": "SYNC DIV",
+   "options": [
+    "8 bars",
+    "4 bars",
+    "3 bars",
+    "2 bars",
+    "1.5 bars",
+    "1 bar",
+    "1/2.",
+    "1/2",
+    "1/4.",
+    "1/2T",
+    "1/4",
+    "1/8.",
+    "1/4T",
+    "1/8",
+    "1/16.",
+    "1/8T",
+    "1/16",
+    "1/32.",
+    "1/16T",
+    "1/32",
+    "1/32T",
+    "1/64"
+   ],
+   "default": 5
+  },
+  {
+   "key": "m7_steps",
+   "name": "M7 STEPS",
+   "min": 2.0,
+   "max": 32.0,
+   "default": 16.0,
+   "display": "int",
+   "dynamic_display": true
+  },
+  {
+   "key": "m7_gate",
+   "name": "M7 GATE",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m7_smooth",
+   "name": "M7 SMOOTH",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m7_shuffle",
+   "name": "M7 SHUFFLE",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m7_tension",
+   "name": "M7 TENSION",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "m7_invert",
+   "name": "M7 INVERT",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "m7_shift",
+   "name": "M7 SHIFT",
+   "min": 0.0,
+   "max": 31.0,
+   "default": 0.0,
+   "display": "int",
+   "dynamic_display": true
+  },
+  {
+   "key": "m7_tremdepth",
+   "name": "M7 TREM",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m7_tremdest",
+   "name": "M7 TREM TO",
+   "options": [
+    "Off",
+    "Global",
+    "Layer A",
+    "Layer B"
+   ],
+   "default": 0
+  },
+  {
+   "key": "m7_flipdepth",
+   "name": "M7 FLIP",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m7_flipdest",
+   "name": "M7 FLIP TO",
+   "options": [
+    "Off",
+    "Global",
+    "Layer A",
+    "Layer B"
+   ],
+   "default": 0
+  },
+  {
+   "key": "m8_mode",
+   "name": "M8 MODE",
+   "options": [
+    "Steps",
+    "Curve"
+   ],
+   "default": 0
+  },
+  {
+   "key": "m8_sync",
+   "name": "M8 SYNC",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 1
+  },
+  {
+   "key": "m8_speed",
+   "name": "M8 SPEED",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.416604,
+   "dynamic_display": true
+  },
+  {
+   "key": "m8_div",
+   "name": "SYNC DIV",
+   "options": [
+    "8 bars",
+    "4 bars",
+    "3 bars",
+    "2 bars",
+    "1.5 bars",
+    "1 bar",
+    "1/2.",
+    "1/2",
+    "1/4.",
+    "1/2T",
+    "1/4",
+    "1/8.",
+    "1/4T",
+    "1/8",
+    "1/16.",
+    "1/8T",
+    "1/16",
+    "1/32.",
+    "1/16T",
+    "1/32",
+    "1/32T",
+    "1/64"
+   ],
+   "default": 5
+  },
+  {
+   "key": "m8_steps",
+   "name": "M8 STEPS",
+   "min": 2.0,
+   "max": 32.0,
+   "default": 16.0,
+   "display": "int",
+   "dynamic_display": true
+  },
+  {
+   "key": "m8_gate",
+   "name": "M8 GATE",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m8_smooth",
+   "name": "M8 SMOOTH",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m8_shuffle",
+   "name": "M8 SHUFFLE",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m8_tension",
+   "name": "M8 TENSION",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "m8_invert",
+   "name": "M8 INVERT",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "m8_shift",
+   "name": "M8 SHIFT",
+   "min": 0.0,
+   "max": 31.0,
+   "default": 0.0,
+   "display": "int",
+   "dynamic_display": true
+  },
+  {
+   "key": "m8_tremdepth",
+   "name": "M8 TREM",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m8_tremdest",
+   "name": "M8 TREM TO",
+   "options": [
+    "Off",
+    "Global",
+    "Layer A",
+    "Layer B"
+   ],
+   "default": 0
+  },
+  {
+   "key": "m8_flipdepth",
+   "name": "M8 FLIP",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m8_flipdest",
+   "name": "M8 FLIP TO",
+   "options": [
+    "Off",
+    "Global",
+    "Layer A",
+    "Layer B"
+   ],
+   "default": 0
+  },
+  {
+   "key": "x1_src",
+   "name": "X1 SRC",
+   "options": [
+    "-",
+    "M1",
+    "M2",
+    "M3",
+    "M4",
+    "M5",
+    "M6",
+    "M7",
+    "M8"
+   ],
+   "default": 0
+  },
+  {
+   "key": "x1_dst",
+   "name": "X1 DEST",
+   "min": 0.0,
+   "max": 84.0,
+   "default": 0.0,
+   "display": "int",
+   "dynamic_display": true,
+   "nudge_pct": 1.2
+  },
+  {
+   "key": "x1_depth",
+   "name": "X1 DEPTH",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "x1_byp",
+   "name": "X1 BYP",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "x2_src",
+   "name": "X2 SRC",
+   "options": [
+    "-",
+    "M1",
+    "M2",
+    "M3",
+    "M4",
+    "M5",
+    "M6",
+    "M7",
+    "M8"
+   ],
+   "default": 0
+  },
+  {
+   "key": "x2_dst",
+   "name": "X2 DEST",
+   "min": 0.0,
+   "max": 84.0,
+   "default": 0.0,
+   "display": "int",
+   "dynamic_display": true,
+   "nudge_pct": 1.2
+  },
+  {
+   "key": "x2_depth",
+   "name": "X2 DEPTH",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "x2_byp",
+   "name": "X2 BYP",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "x3_src",
+   "name": "X3 SRC",
+   "options": [
+    "-",
+    "M1",
+    "M2",
+    "M3",
+    "M4",
+    "M5",
+    "M6",
+    "M7",
+    "M8"
+   ],
+   "default": 0
+  },
+  {
+   "key": "x3_dst",
+   "name": "X3 DEST",
+   "min": 0.0,
+   "max": 84.0,
+   "default": 0.0,
+   "display": "int",
+   "dynamic_display": true,
+   "nudge_pct": 1.2
+  },
+  {
+   "key": "x3_depth",
+   "name": "X3 DEPTH",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "x3_byp",
+   "name": "X3 BYP",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "x4_src",
+   "name": "X4 SRC",
+   "options": [
+    "-",
+    "M1",
+    "M2",
+    "M3",
+    "M4",
+    "M5",
+    "M6",
+    "M7",
+    "M8"
+   ],
+   "default": 0
+  },
+  {
+   "key": "x4_dst",
+   "name": "X4 DEST",
+   "min": 0.0,
+   "max": 84.0,
+   "default": 0.0,
+   "display": "int",
+   "dynamic_display": true,
+   "nudge_pct": 1.2
+  },
+  {
+   "key": "x4_depth",
+   "name": "X4 DEPTH",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "x4_byp",
+   "name": "X4 BYP",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "x5_src",
+   "name": "X5 SRC",
+   "options": [
+    "-",
+    "M1",
+    "M2",
+    "M3",
+    "M4",
+    "M5",
+    "M6",
+    "M7",
+    "M8"
+   ],
+   "default": 0
+  },
+  {
+   "key": "x5_dst",
+   "name": "X5 DEST",
+   "min": 0.0,
+   "max": 84.0,
+   "default": 0.0,
+   "display": "int",
+   "dynamic_display": true,
+   "nudge_pct": 1.2
+  },
+  {
+   "key": "x5_depth",
+   "name": "X5 DEPTH",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "x5_byp",
+   "name": "X5 BYP",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "x6_src",
+   "name": "X6 SRC",
+   "options": [
+    "-",
+    "M1",
+    "M2",
+    "M3",
+    "M4",
+    "M5",
+    "M6",
+    "M7",
+    "M8"
+   ],
+   "default": 0
+  },
+  {
+   "key": "x6_dst",
+   "name": "X6 DEST",
+   "min": 0.0,
+   "max": 84.0,
+   "default": 0.0,
+   "display": "int",
+   "dynamic_display": true,
+   "nudge_pct": 1.2
+  },
+  {
+   "key": "x6_depth",
+   "name": "X6 DEPTH",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "x6_byp",
+   "name": "X6 BYP",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "x7_src",
+   "name": "X7 SRC",
+   "options": [
+    "-",
+    "M1",
+    "M2",
+    "M3",
+    "M4",
+    "M5",
+    "M6",
+    "M7",
+    "M8"
+   ],
+   "default": 0
+  },
+  {
+   "key": "x7_dst",
+   "name": "X7 DEST",
+   "min": 0.0,
+   "max": 84.0,
+   "default": 0.0,
+   "display": "int",
+   "dynamic_display": true,
+   "nudge_pct": 1.2
+  },
+  {
+   "key": "x7_depth",
+   "name": "X7 DEPTH",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "x7_byp",
+   "name": "X7 BYP",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "x8_src",
+   "name": "X8 SRC",
+   "options": [
+    "-",
+    "M1",
+    "M2",
+    "M3",
+    "M4",
+    "M5",
+    "M6",
+    "M7",
+    "M8"
+   ],
+   "default": 0
+  },
+  {
+   "key": "x8_dst",
+   "name": "X8 DEST",
+   "min": 0.0,
+   "max": 84.0,
+   "default": 0.0,
+   "display": "int",
+   "dynamic_display": true,
+   "nudge_pct": 1.2
+  },
+  {
+   "key": "x8_depth",
+   "name": "X8 DEPTH",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "x8_byp",
+   "name": "X8 BYP",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "x9_src",
+   "name": "X9 SRC",
+   "options": [
+    "-",
+    "M1",
+    "M2",
+    "M3",
+    "M4",
+    "M5",
+    "M6",
+    "M7",
+    "M8"
+   ],
+   "default": 0
+  },
+  {
+   "key": "x9_dst",
+   "name": "X9 DEST",
+   "min": 0.0,
+   "max": 84.0,
+   "default": 0.0,
+   "display": "int",
+   "dynamic_display": true,
+   "nudge_pct": 1.2
+  },
+  {
+   "key": "x9_depth",
+   "name": "X9 DEPTH",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "x9_byp",
+   "name": "X9 BYP",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "x10_src",
+   "name": "X10 SRC",
+   "options": [
+    "-",
+    "M1",
+    "M2",
+    "M3",
+    "M4",
+    "M5",
+    "M6",
+    "M7",
+    "M8"
+   ],
+   "default": 0
+  },
+  {
+   "key": "x10_dst",
+   "name": "X10 DEST",
+   "min": 0.0,
+   "max": 84.0,
+   "default": 0.0,
+   "display": "int",
+   "dynamic_display": true,
+   "nudge_pct": 1.2
+  },
+  {
+   "key": "x10_depth",
+   "name": "X10 DEPTH",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "x10_byp",
+   "name": "X10 BYP",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "x11_src",
+   "name": "X11 SRC",
+   "options": [
+    "-",
+    "M1",
+    "M2",
+    "M3",
+    "M4",
+    "M5",
+    "M6",
+    "M7",
+    "M8"
+   ],
+   "default": 0
+  },
+  {
+   "key": "x11_dst",
+   "name": "X11 DEST",
+   "min": 0.0,
+   "max": 84.0,
+   "default": 0.0,
+   "display": "int",
+   "dynamic_display": true,
+   "nudge_pct": 1.2
+  },
+  {
+   "key": "x11_depth",
+   "name": "X11 DEPTH",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "x11_byp",
+   "name": "X11 BYP",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "x12_src",
+   "name": "X12 SRC",
+   "options": [
+    "-",
+    "M1",
+    "M2",
+    "M3",
+    "M4",
+    "M5",
+    "M6",
+    "M7",
+    "M8"
+   ],
+   "default": 0
+  },
+  {
+   "key": "x12_dst",
+   "name": "X12 DEST",
+   "min": 0.0,
+   "max": 84.0,
+   "default": 0.0,
+   "display": "int",
+   "dynamic_display": true,
+   "nudge_pct": 1.2
+  },
+  {
+   "key": "x12_depth",
+   "name": "X12 DEPTH",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "x12_byp",
+   "name": "X12 BYP",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "x13_src",
+   "name": "X13 SRC",
+   "options": [
+    "-",
+    "M1",
+    "M2",
+    "M3",
+    "M4",
+    "M5",
+    "M6",
+    "M7",
+    "M8"
+   ],
+   "default": 0
+  },
+  {
+   "key": "x13_dst",
+   "name": "X13 DEST",
+   "min": 0.0,
+   "max": 84.0,
+   "default": 0.0,
+   "display": "int",
+   "dynamic_display": true,
+   "nudge_pct": 1.2
+  },
+  {
+   "key": "x13_depth",
+   "name": "X13 DEPTH",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "x13_byp",
+   "name": "X13 BYP",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "x14_src",
+   "name": "X14 SRC",
+   "options": [
+    "-",
+    "M1",
+    "M2",
+    "M3",
+    "M4",
+    "M5",
+    "M6",
+    "M7",
+    "M8"
+   ],
+   "default": 0
+  },
+  {
+   "key": "x14_dst",
+   "name": "X14 DEST",
+   "min": 0.0,
+   "max": 84.0,
+   "default": 0.0,
+   "display": "int",
+   "dynamic_display": true,
+   "nudge_pct": 1.2
+  },
+  {
+   "key": "x14_depth",
+   "name": "X14 DEPTH",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "x14_byp",
+   "name": "X14 BYP",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "x15_src",
+   "name": "X15 SRC",
+   "options": [
+    "-",
+    "M1",
+    "M2",
+    "M3",
+    "M4",
+    "M5",
+    "M6",
+    "M7",
+    "M8"
+   ],
+   "default": 0
+  },
+  {
+   "key": "x15_dst",
+   "name": "X15 DEST",
+   "min": 0.0,
+   "max": 84.0,
+   "default": 0.0,
+   "display": "int",
+   "dynamic_display": true,
+   "nudge_pct": 1.2
+  },
+  {
+   "key": "x15_depth",
+   "name": "X15 DEPTH",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "x15_byp",
+   "name": "X15 BYP",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "x16_src",
+   "name": "X16 SRC",
+   "options": [
+    "-",
+    "M1",
+    "M2",
+    "M3",
+    "M4",
+    "M5",
+    "M6",
+    "M7",
+    "M8"
+   ],
+   "default": 0
+  },
+  {
+   "key": "x16_dst",
+   "name": "X16 DEST",
+   "min": 0.0,
+   "max": 84.0,
+   "default": 0.0,
+   "display": "int",
+   "dynamic_display": true,
+   "nudge_pct": 1.2
+  },
+  {
+   "key": "x16_depth",
+   "name": "X16 DEPTH",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "x16_byp",
+   "name": "X16 BYP",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "x17_src",
+   "name": "X17 SRC",
+   "options": [
+    "-",
+    "M1",
+    "M2",
+    "M3",
+    "M4",
+    "M5",
+    "M6",
+    "M7",
+    "M8"
+   ],
+   "default": 0
+  },
+  {
+   "key": "x17_dst",
+   "name": "X17 DEST",
+   "min": 0.0,
+   "max": 84.0,
+   "default": 0.0,
+   "display": "int",
+   "dynamic_display": true,
+   "nudge_pct": 1.2
+  },
+  {
+   "key": "x17_depth",
+   "name": "X17 DEPTH",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "x17_byp",
+   "name": "X17 BYP",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "x18_src",
+   "name": "X18 SRC",
+   "options": [
+    "-",
+    "M1",
+    "M2",
+    "M3",
+    "M4",
+    "M5",
+    "M6",
+    "M7",
+    "M8"
+   ],
+   "default": 0
+  },
+  {
+   "key": "x18_dst",
+   "name": "X18 DEST",
+   "min": 0.0,
+   "max": 84.0,
+   "default": 0.0,
+   "display": "int",
+   "dynamic_display": true,
+   "nudge_pct": 1.2
+  },
+  {
+   "key": "x18_depth",
+   "name": "X18 DEPTH",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "x18_byp",
+   "name": "X18 BYP",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "x19_src",
+   "name": "X19 SRC",
+   "options": [
+    "-",
+    "M1",
+    "M2",
+    "M3",
+    "M4",
+    "M5",
+    "M6",
+    "M7",
+    "M8"
+   ],
+   "default": 0
+  },
+  {
+   "key": "x19_dst",
+   "name": "X19 DEST",
+   "min": 0.0,
+   "max": 84.0,
+   "default": 0.0,
+   "display": "int",
+   "dynamic_display": true,
+   "nudge_pct": 1.2
+  },
+  {
+   "key": "x19_depth",
+   "name": "X19 DEPTH",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "x19_byp",
+   "name": "X19 BYP",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "x20_src",
+   "name": "X20 SRC",
+   "options": [
+    "-",
+    "M1",
+    "M2",
+    "M3",
+    "M4",
+    "M5",
+    "M6",
+    "M7",
+    "M8"
+   ],
+   "default": 0
+  },
+  {
+   "key": "x20_dst",
+   "name": "X20 DEST",
+   "min": 0.0,
+   "max": 84.0,
+   "default": 0.0,
+   "display": "int",
+   "dynamic_display": true,
+   "nudge_pct": 1.2
+  },
+  {
+   "key": "x20_depth",
+   "name": "X20 DEPTH",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "x20_byp",
+   "name": "X20 BYP",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "x21_src",
+   "name": "X21 SRC",
+   "options": [
+    "-",
+    "M1",
+    "M2",
+    "M3",
+    "M4",
+    "M5",
+    "M6",
+    "M7",
+    "M8"
+   ],
+   "default": 0
+  },
+  {
+   "key": "x21_dst",
+   "name": "X21 DEST",
+   "min": 0.0,
+   "max": 84.0,
+   "default": 0.0,
+   "display": "int",
+   "dynamic_display": true,
+   "nudge_pct": 1.2
+  },
+  {
+   "key": "x21_depth",
+   "name": "X21 DEPTH",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "x21_byp",
+   "name": "X21 BYP",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "x22_src",
+   "name": "X22 SRC",
+   "options": [
+    "-",
+    "M1",
+    "M2",
+    "M3",
+    "M4",
+    "M5",
+    "M6",
+    "M7",
+    "M8"
+   ],
+   "default": 0
+  },
+  {
+   "key": "x22_dst",
+   "name": "X22 DEST",
+   "min": 0.0,
+   "max": 84.0,
+   "default": 0.0,
+   "display": "int",
+   "dynamic_display": true,
+   "nudge_pct": 1.2
+  },
+  {
+   "key": "x22_depth",
+   "name": "X22 DEPTH",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "x22_byp",
+   "name": "X22 BYP",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "x23_src",
+   "name": "X23 SRC",
+   "options": [
+    "-",
+    "M1",
+    "M2",
+    "M3",
+    "M4",
+    "M5",
+    "M6",
+    "M7",
+    "M8"
+   ],
+   "default": 0
+  },
+  {
+   "key": "x23_dst",
+   "name": "X23 DEST",
+   "min": 0.0,
+   "max": 84.0,
+   "default": 0.0,
+   "display": "int",
+   "dynamic_display": true,
+   "nudge_pct": 1.2
+  },
+  {
+   "key": "x23_depth",
+   "name": "X23 DEPTH",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "x23_byp",
+   "name": "X23 BYP",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "x24_src",
+   "name": "X24 SRC",
+   "options": [
+    "-",
+    "M1",
+    "M2",
+    "M3",
+    "M4",
+    "M5",
+    "M6",
+    "M7",
+    "M8"
+   ],
+   "default": 0
+  },
+  {
+   "key": "x24_dst",
+   "name": "X24 DEST",
+   "min": 0.0,
+   "max": 84.0,
+   "default": 0.0,
+   "display": "int",
+   "dynamic_display": true,
+   "nudge_pct": 1.2
+  },
+  {
+   "key": "x24_depth",
+   "name": "X24 DEPTH",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "x24_byp",
+   "name": "X24 BYP",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "m1_s01",
+   "name": "M1 Step 1",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m1_s02",
+   "name": "M1 Step 2",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m1_s03",
+   "name": "M1 Step 3",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m1_s04",
+   "name": "M1 Step 4",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m1_s05",
+   "name": "M1 Step 5",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m1_s06",
+   "name": "M1 Step 6",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m1_s07",
+   "name": "M1 Step 7",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m1_s08",
+   "name": "M1 Step 8",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m1_s09",
+   "name": "M1 Step 9",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m1_s10",
+   "name": "M1 Step 10",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m1_s11",
+   "name": "M1 Step 11",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m1_s12",
+   "name": "M1 Step 12",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m1_s13",
+   "name": "M1 Step 13",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m1_s14",
+   "name": "M1 Step 14",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m1_s15",
+   "name": "M1 Step 15",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m1_s16",
+   "name": "M1 Step 16",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m1_s17",
+   "name": "M1 Step 17",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m1_s18",
+   "name": "M1 Step 18",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m1_s19",
+   "name": "M1 Step 19",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m1_s20",
+   "name": "M1 Step 20",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m1_s21",
+   "name": "M1 Step 21",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m1_s22",
+   "name": "M1 Step 22",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m1_s23",
+   "name": "M1 Step 23",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m1_s24",
+   "name": "M1 Step 24",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m1_s25",
+   "name": "M1 Step 25",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m1_s26",
+   "name": "M1 Step 26",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m1_s27",
+   "name": "M1 Step 27",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m1_s28",
+   "name": "M1 Step 28",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m1_s29",
+   "name": "M1 Step 29",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m1_s30",
+   "name": "M1 Step 30",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m1_s31",
+   "name": "M1 Step 31",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m1_s32",
+   "name": "M1 Step 32",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m2_s01",
+   "name": "M2 Step 1",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m2_s02",
+   "name": "M2 Step 2",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m2_s03",
+   "name": "M2 Step 3",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m2_s04",
+   "name": "M2 Step 4",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m2_s05",
+   "name": "M2 Step 5",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m2_s06",
+   "name": "M2 Step 6",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m2_s07",
+   "name": "M2 Step 7",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m2_s08",
+   "name": "M2 Step 8",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m2_s09",
+   "name": "M2 Step 9",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m2_s10",
+   "name": "M2 Step 10",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m2_s11",
+   "name": "M2 Step 11",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m2_s12",
+   "name": "M2 Step 12",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m2_s13",
+   "name": "M2 Step 13",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m2_s14",
+   "name": "M2 Step 14",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m2_s15",
+   "name": "M2 Step 15",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m2_s16",
+   "name": "M2 Step 16",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m2_s17",
+   "name": "M2 Step 17",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m2_s18",
+   "name": "M2 Step 18",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m2_s19",
+   "name": "M2 Step 19",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m2_s20",
+   "name": "M2 Step 20",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m2_s21",
+   "name": "M2 Step 21",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m2_s22",
+   "name": "M2 Step 22",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m2_s23",
+   "name": "M2 Step 23",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m2_s24",
+   "name": "M2 Step 24",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m2_s25",
+   "name": "M2 Step 25",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m2_s26",
+   "name": "M2 Step 26",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m2_s27",
+   "name": "M2 Step 27",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m2_s28",
+   "name": "M2 Step 28",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m2_s29",
+   "name": "M2 Step 29",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m2_s30",
+   "name": "M2 Step 30",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m2_s31",
+   "name": "M2 Step 31",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m2_s32",
+   "name": "M2 Step 32",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m3_s01",
+   "name": "M3 Step 1",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m3_s02",
+   "name": "M3 Step 2",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m3_s03",
+   "name": "M3 Step 3",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m3_s04",
+   "name": "M3 Step 4",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m3_s05",
+   "name": "M3 Step 5",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m3_s06",
+   "name": "M3 Step 6",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m3_s07",
+   "name": "M3 Step 7",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m3_s08",
+   "name": "M3 Step 8",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m3_s09",
+   "name": "M3 Step 9",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m3_s10",
+   "name": "M3 Step 10",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m3_s11",
+   "name": "M3 Step 11",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m3_s12",
+   "name": "M3 Step 12",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m3_s13",
+   "name": "M3 Step 13",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m3_s14",
+   "name": "M3 Step 14",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m3_s15",
+   "name": "M3 Step 15",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m3_s16",
+   "name": "M3 Step 16",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m3_s17",
+   "name": "M3 Step 17",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m3_s18",
+   "name": "M3 Step 18",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m3_s19",
+   "name": "M3 Step 19",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m3_s20",
+   "name": "M3 Step 20",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m3_s21",
+   "name": "M3 Step 21",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m3_s22",
+   "name": "M3 Step 22",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m3_s23",
+   "name": "M3 Step 23",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m3_s24",
+   "name": "M3 Step 24",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m3_s25",
+   "name": "M3 Step 25",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m3_s26",
+   "name": "M3 Step 26",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m3_s27",
+   "name": "M3 Step 27",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m3_s28",
+   "name": "M3 Step 28",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m3_s29",
+   "name": "M3 Step 29",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m3_s30",
+   "name": "M3 Step 30",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m3_s31",
+   "name": "M3 Step 31",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m3_s32",
+   "name": "M3 Step 32",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m4_s01",
+   "name": "M4 Step 1",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m4_s02",
+   "name": "M4 Step 2",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m4_s03",
+   "name": "M4 Step 3",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m4_s04",
+   "name": "M4 Step 4",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m4_s05",
+   "name": "M4 Step 5",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m4_s06",
+   "name": "M4 Step 6",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m4_s07",
+   "name": "M4 Step 7",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m4_s08",
+   "name": "M4 Step 8",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m4_s09",
+   "name": "M4 Step 9",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m4_s10",
+   "name": "M4 Step 10",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m4_s11",
+   "name": "M4 Step 11",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m4_s12",
+   "name": "M4 Step 12",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m4_s13",
+   "name": "M4 Step 13",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m4_s14",
+   "name": "M4 Step 14",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m4_s15",
+   "name": "M4 Step 15",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m4_s16",
+   "name": "M4 Step 16",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m4_s17",
+   "name": "M4 Step 17",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m4_s18",
+   "name": "M4 Step 18",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m4_s19",
+   "name": "M4 Step 19",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m4_s20",
+   "name": "M4 Step 20",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m4_s21",
+   "name": "M4 Step 21",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m4_s22",
+   "name": "M4 Step 22",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m4_s23",
+   "name": "M4 Step 23",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m4_s24",
+   "name": "M4 Step 24",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m4_s25",
+   "name": "M4 Step 25",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m4_s26",
+   "name": "M4 Step 26",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m4_s27",
+   "name": "M4 Step 27",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m4_s28",
+   "name": "M4 Step 28",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m4_s29",
+   "name": "M4 Step 29",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m4_s30",
+   "name": "M4 Step 30",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m4_s31",
+   "name": "M4 Step 31",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m4_s32",
+   "name": "M4 Step 32",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m5_s01",
+   "name": "M5 Step 1",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m5_s02",
+   "name": "M5 Step 2",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m5_s03",
+   "name": "M5 Step 3",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m5_s04",
+   "name": "M5 Step 4",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m5_s05",
+   "name": "M5 Step 5",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m5_s06",
+   "name": "M5 Step 6",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m5_s07",
+   "name": "M5 Step 7",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m5_s08",
+   "name": "M5 Step 8",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m5_s09",
+   "name": "M5 Step 9",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m5_s10",
+   "name": "M5 Step 10",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m5_s11",
+   "name": "M5 Step 11",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m5_s12",
+   "name": "M5 Step 12",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m5_s13",
+   "name": "M5 Step 13",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m5_s14",
+   "name": "M5 Step 14",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m5_s15",
+   "name": "M5 Step 15",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m5_s16",
+   "name": "M5 Step 16",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m5_s17",
+   "name": "M5 Step 17",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m5_s18",
+   "name": "M5 Step 18",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m5_s19",
+   "name": "M5 Step 19",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m5_s20",
+   "name": "M5 Step 20",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m5_s21",
+   "name": "M5 Step 21",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m5_s22",
+   "name": "M5 Step 22",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m5_s23",
+   "name": "M5 Step 23",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m5_s24",
+   "name": "M5 Step 24",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m5_s25",
+   "name": "M5 Step 25",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m5_s26",
+   "name": "M5 Step 26",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m5_s27",
+   "name": "M5 Step 27",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m5_s28",
+   "name": "M5 Step 28",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m5_s29",
+   "name": "M5 Step 29",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m5_s30",
+   "name": "M5 Step 30",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m5_s31",
+   "name": "M5 Step 31",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m5_s32",
+   "name": "M5 Step 32",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m6_s01",
+   "name": "M6 Step 1",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m6_s02",
+   "name": "M6 Step 2",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m6_s03",
+   "name": "M6 Step 3",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m6_s04",
+   "name": "M6 Step 4",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m6_s05",
+   "name": "M6 Step 5",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m6_s06",
+   "name": "M6 Step 6",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m6_s07",
+   "name": "M6 Step 7",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m6_s08",
+   "name": "M6 Step 8",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m6_s09",
+   "name": "M6 Step 9",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m6_s10",
+   "name": "M6 Step 10",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m6_s11",
+   "name": "M6 Step 11",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m6_s12",
+   "name": "M6 Step 12",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m6_s13",
+   "name": "M6 Step 13",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m6_s14",
+   "name": "M6 Step 14",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m6_s15",
+   "name": "M6 Step 15",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m6_s16",
+   "name": "M6 Step 16",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m6_s17",
+   "name": "M6 Step 17",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m6_s18",
+   "name": "M6 Step 18",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m6_s19",
+   "name": "M6 Step 19",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m6_s20",
+   "name": "M6 Step 20",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m6_s21",
+   "name": "M6 Step 21",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m6_s22",
+   "name": "M6 Step 22",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m6_s23",
+   "name": "M6 Step 23",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m6_s24",
+   "name": "M6 Step 24",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m6_s25",
+   "name": "M6 Step 25",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m6_s26",
+   "name": "M6 Step 26",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m6_s27",
+   "name": "M6 Step 27",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m6_s28",
+   "name": "M6 Step 28",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m6_s29",
+   "name": "M6 Step 29",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m6_s30",
+   "name": "M6 Step 30",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m6_s31",
+   "name": "M6 Step 31",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m6_s32",
+   "name": "M6 Step 32",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m7_s01",
+   "name": "M7 Step 1",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m7_s02",
+   "name": "M7 Step 2",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m7_s03",
+   "name": "M7 Step 3",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m7_s04",
+   "name": "M7 Step 4",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m7_s05",
+   "name": "M7 Step 5",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m7_s06",
+   "name": "M7 Step 6",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m7_s07",
+   "name": "M7 Step 7",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m7_s08",
+   "name": "M7 Step 8",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m7_s09",
+   "name": "M7 Step 9",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m7_s10",
+   "name": "M7 Step 10",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m7_s11",
+   "name": "M7 Step 11",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m7_s12",
+   "name": "M7 Step 12",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m7_s13",
+   "name": "M7 Step 13",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m7_s14",
+   "name": "M7 Step 14",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m7_s15",
+   "name": "M7 Step 15",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m7_s16",
+   "name": "M7 Step 16",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m7_s17",
+   "name": "M7 Step 17",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m7_s18",
+   "name": "M7 Step 18",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m7_s19",
+   "name": "M7 Step 19",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m7_s20",
+   "name": "M7 Step 20",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m7_s21",
+   "name": "M7 Step 21",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m7_s22",
+   "name": "M7 Step 22",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m7_s23",
+   "name": "M7 Step 23",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m7_s24",
+   "name": "M7 Step 24",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m7_s25",
+   "name": "M7 Step 25",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m7_s26",
+   "name": "M7 Step 26",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m7_s27",
+   "name": "M7 Step 27",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m7_s28",
+   "name": "M7 Step 28",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m7_s29",
+   "name": "M7 Step 29",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m7_s30",
+   "name": "M7 Step 30",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m7_s31",
+   "name": "M7 Step 31",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m7_s32",
+   "name": "M7 Step 32",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m8_s01",
+   "name": "M8 Step 1",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m8_s02",
+   "name": "M8 Step 2",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m8_s03",
+   "name": "M8 Step 3",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m8_s04",
+   "name": "M8 Step 4",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m8_s05",
+   "name": "M8 Step 5",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m8_s06",
+   "name": "M8 Step 6",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m8_s07",
+   "name": "M8 Step 7",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m8_s08",
+   "name": "M8 Step 8",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m8_s09",
+   "name": "M8 Step 9",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m8_s10",
+   "name": "M8 Step 10",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m8_s11",
+   "name": "M8 Step 11",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m8_s12",
+   "name": "M8 Step 12",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m8_s13",
+   "name": "M8 Step 13",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m8_s14",
+   "name": "M8 Step 14",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m8_s15",
+   "name": "M8 Step 15",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m8_s16",
+   "name": "M8 Step 16",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m8_s17",
+   "name": "M8 Step 17",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m8_s18",
+   "name": "M8 Step 18",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m8_s19",
+   "name": "M8 Step 19",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m8_s20",
+   "name": "M8 Step 20",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m8_s21",
+   "name": "M8 Step 21",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m8_s22",
+   "name": "M8 Step 22",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m8_s23",
+   "name": "M8 Step 23",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m8_s24",
+   "name": "M8 Step 24",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m8_s25",
+   "name": "M8 Step 25",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m8_s26",
+   "name": "M8 Step 26",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m8_s27",
+   "name": "M8 Step 27",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m8_s28",
+   "name": "M8 Step 28",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m8_s29",
+   "name": "M8 Step 29",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m8_s30",
+   "name": "M8 Step 30",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m8_s31",
+   "name": "M8 Step 31",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m8_s32",
+   "name": "M8 Step 32",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 1.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "g_hostsync",
+   "name": "Host Sync",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 1
+  },
+  {
+   "key": "view",
+   "name": "Page",
+   "min": 0.0,
+   "max": 37.0,
+   "default": 0.0,
+   "display": "int",
+   "poll": false,
+   "refresh_display": true
+  },
+  {
+   "key": "nav_zoom",
+   "name": "Overview",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "nav_prev",
+   "name": "Prev Page",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "nav_next",
+   "name": "Next Page",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "go_a_mix",
+   "name": "Go Layer A  Mix",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "go_a_fi",
+   "name": "Go Layer A  Filter",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "go_a_di",
+   "name": "Go Layer A  Distortion",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "go_a_de",
+   "name": "Go Layer A  Delay",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "go_a_lo",
+   "name": "Go Layer A  Lo-Fi",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "go_a_fl",
+   "name": "Go Layer A  Flanger",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "go_a_gl",
+   "name": "Go Layer A  Glitch",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "go_b_mix",
+   "name": "Go Layer B  Mix",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "go_b_fi",
+   "name": "Go Layer B  Filter",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "go_b_di",
+   "name": "Go Layer B  Distortion",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "go_b_de",
+   "name": "Go Layer B  Delay",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "go_b_lo",
+   "name": "Go Layer B  Lo-Fi",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "go_b_fl",
+   "name": "Go Layer B  Flanger",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "go_b_gl",
+   "name": "Go Layer B  Glitch",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "go_mod1",
+   "name": "Go Modulator 1",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "go_mod2",
+   "name": "Go Modulator 2",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "go_mod3",
+   "name": "Go Modulator 3",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "go_mod4",
+   "name": "Go Modulator 4",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "go_mod5",
+   "name": "Go Modulator 5",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "go_mod6",
+   "name": "Go Modulator 6",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "go_mod7",
+   "name": "Go Modulator 7",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "go_mod8",
+   "name": "Go Modulator 8",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "go_st1",
+   "name": "Go Modulator 1  Steps",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "go_st2",
+   "name": "Go Modulator 2  Steps",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "go_st3",
+   "name": "Go Modulator 3  Steps",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "go_st4",
+   "name": "Go Modulator 4  Steps",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "go_st5",
+   "name": "Go Modulator 5  Steps",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "go_st6",
+   "name": "Go Modulator 6  Steps",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "go_st7",
+   "name": "Go Modulator 7  Steps",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "go_st8",
+   "name": "Go Modulator 8  Steps",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "go_mx1",
+   "name": "Go Matrix  Slots 1-6",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "go_mx2",
+   "name": "Go Matrix  Slots 7-12",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "go_mx3",
+   "name": "Go Matrix  Slots 13-18",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "go_mx4",
+   "name": "Go Matrix  Slots 19-24",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "go_master1",
+   "name": "Go Master  Eq + Reverb",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "go_master2",
+   "name": "Go Master  Output",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "go_presets",
+   "name": "Go Presets",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "stepbank",
+   "name": "Q 17-32",
+   "options": [
+    "Q 1-16",
+    "Q 17-32"
+   ],
+   "default": 0,
+   "refresh_display": true
+  },
+  {
+   "key": "in_sec",
+   "name": "In Section",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "page_title",
+   "name": "Page Title",
+   "min": 0.0,
+   "max": 0.0,
+   "default": 0.0,
+   "display": "string"
+  },
+  {
+   "key": "rnd_mod1",
+   "name": "RND",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "rnda_mod1",
+   "name": "RND Amount",
+   "options": [
+    "10 %",
+    "30 %",
+    "50 %",
+    "70 %",
+    "90 %",
+    "100 %"
+   ],
+   "default": 2
+  },
+  {
+   "key": "rnd_mod2",
+   "name": "RND",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "rnda_mod2",
+   "name": "RND Amount",
+   "options": [
+    "10 %",
+    "30 %",
+    "50 %",
+    "70 %",
+    "90 %",
+    "100 %"
+   ],
+   "default": 2
+  },
+  {
+   "key": "rnd_mod3",
+   "name": "RND",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "rnda_mod3",
+   "name": "RND Amount",
+   "options": [
+    "10 %",
+    "30 %",
+    "50 %",
+    "70 %",
+    "90 %",
+    "100 %"
+   ],
+   "default": 2
+  },
+  {
+   "key": "rnd_mod4",
+   "name": "RND",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "rnda_mod4",
+   "name": "RND Amount",
+   "options": [
+    "10 %",
+    "30 %",
+    "50 %",
+    "70 %",
+    "90 %",
+    "100 %"
+   ],
+   "default": 2
+  },
+  {
+   "key": "rnd_mod5",
+   "name": "RND",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "rnda_mod5",
+   "name": "RND Amount",
+   "options": [
+    "10 %",
+    "30 %",
+    "50 %",
+    "70 %",
+    "90 %",
+    "100 %"
+   ],
+   "default": 2
+  },
+  {
+   "key": "rnd_mod6",
+   "name": "RND",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "rnda_mod6",
+   "name": "RND Amount",
+   "options": [
+    "10 %",
+    "30 %",
+    "50 %",
+    "70 %",
+    "90 %",
+    "100 %"
+   ],
+   "default": 2
+  },
+  {
+   "key": "rnd_mod7",
+   "name": "RND",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "rnda_mod7",
+   "name": "RND Amount",
+   "options": [
+    "10 %",
+    "30 %",
+    "50 %",
+    "70 %",
+    "90 %",
+    "100 %"
+   ],
+   "default": 2
+  },
+  {
+   "key": "rnd_mod8",
+   "name": "RND",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "rnda_mod8",
+   "name": "RND Amount",
+   "options": [
+    "10 %",
+    "30 %",
+    "50 %",
+    "70 %",
+    "90 %",
+    "100 %"
+   ],
+   "default": 2
+  },
+  {
+   "key": "rnd_st1",
+   "name": "RND",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "rnda_st1",
+   "name": "RND Amount",
+   "options": [
+    "10 %",
+    "30 %",
+    "50 %",
+    "70 %",
+    "90 %",
+    "100 %"
+   ],
+   "default": 2
+  },
+  {
+   "key": "rnd_st2",
+   "name": "RND",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "rnda_st2",
+   "name": "RND Amount",
+   "options": [
+    "10 %",
+    "30 %",
+    "50 %",
+    "70 %",
+    "90 %",
+    "100 %"
+   ],
+   "default": 2
+  },
+  {
+   "key": "rnd_st3",
+   "name": "RND",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "rnda_st3",
+   "name": "RND Amount",
+   "options": [
+    "10 %",
+    "30 %",
+    "50 %",
+    "70 %",
+    "90 %",
+    "100 %"
+   ],
+   "default": 2
+  },
+  {
+   "key": "rnd_st4",
+   "name": "RND",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "rnda_st4",
+   "name": "RND Amount",
+   "options": [
+    "10 %",
+    "30 %",
+    "50 %",
+    "70 %",
+    "90 %",
+    "100 %"
+   ],
+   "default": 2
+  },
+  {
+   "key": "rnd_st5",
+   "name": "RND",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "rnda_st5",
+   "name": "RND Amount",
+   "options": [
+    "10 %",
+    "30 %",
+    "50 %",
+    "70 %",
+    "90 %",
+    "100 %"
+   ],
+   "default": 2
+  },
+  {
+   "key": "rnd_st6",
+   "name": "RND",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "rnda_st6",
+   "name": "RND Amount",
+   "options": [
+    "10 %",
+    "30 %",
+    "50 %",
+    "70 %",
+    "90 %",
+    "100 %"
+   ],
+   "default": 2
+  },
+  {
+   "key": "rnd_st7",
+   "name": "RND",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "rnda_st7",
+   "name": "RND Amount",
+   "options": [
+    "10 %",
+    "30 %",
+    "50 %",
+    "70 %",
+    "90 %",
+    "100 %"
+   ],
+   "default": 2
+  },
+  {
+   "key": "rnd_st8",
+   "name": "RND",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "rnda_st8",
+   "name": "RND Amount",
+   "options": [
+    "10 %",
+    "30 %",
+    "50 %",
+    "70 %",
+    "90 %",
+    "100 %"
+   ],
+   "default": 2
+  },
+  {
+   "key": "rnd_mx1",
+   "name": "RND",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "rnda_mx1",
+   "name": "RND Amount",
+   "options": [
+    "10 %",
+    "30 %",
+    "50 %",
+    "70 %",
+    "90 %",
+    "100 %"
+   ],
+   "default": 2
+  },
+  {
+   "key": "rnd_mx2",
+   "name": "RND",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "rnda_mx2",
+   "name": "RND Amount",
+   "options": [
+    "10 %",
+    "30 %",
+    "50 %",
+    "70 %",
+    "90 %",
+    "100 %"
+   ],
+   "default": 2
+  },
+  {
+   "key": "rnd_mx3",
+   "name": "RND",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "rnda_mx3",
+   "name": "RND Amount",
+   "options": [
+    "10 %",
+    "30 %",
+    "50 %",
+    "70 %",
+    "90 %",
+    "100 %"
+   ],
+   "default": 2
+  },
+  {
+   "key": "rnd_mx4",
+   "name": "RND",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "rnda_mx4",
+   "name": "RND Amount",
+   "options": [
+    "10 %",
+    "30 %",
+    "50 %",
+    "70 %",
+    "90 %",
+    "100 %"
+   ],
+   "default": 2
+  },
+  {
+   "key": "pr_style",
+   "name": "Style",
+   "options": [
+    "BASIC",
+    "GATES",
+    "FILTER SEQ",
+    "GLITCH",
+    "MOVEMENT",
+    "DELAYS",
+    "LO-FI",
+    "SPACE",
+    "LAYERS",
+    "DESTRUCTION",
+    "MY PRESETS"
+   ],
+   "default": 0,
+   "refresh_display": true
+  },
+  {
+   "key": "pr_sel",
+   "name": "Preset",
+   "min": 0.0,
+   "max": 999.0,
+   "default": 0.0,
+   "display": "int",
+   "dynamic_display": true,
+   "nudge_pct": 10,
+   "refresh_display": true
+  },
+  {
+   "key": "pr_pg",
+   "name": "List Page",
+   "min": 0.0,
+   "max": 999.0,
+   "default": 0.0,
+   "display": "int",
+   "dynamic_display": true,
+   "nudge_pct": 10,
+   "refresh_display": true,
+   "poll": false
+  },
+  {
+   "key": "pr_prev",
+   "name": "List Prev",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "pr_next",
+   "name": "List Next",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "pr_save",
+   "name": "Save",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "pr_new",
+   "name": "Save New",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "pr_del",
+   "name": "Delete",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "pr_cur",
+   "name": "Preset Name",
+   "min": 0.0,
+   "max": 0.0,
+   "default": 0.0,
+   "display": "string"
+  },
+  {
+   "key": "pr_info",
+   "name": "List Info",
+   "min": 0.0,
+   "max": 0.0,
+   "default": 0.0,
+   "display": "string"
+  },
+  {
+   "key": "pr_sty_1",
+   "name": "Style 1",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "display": "string"
+  },
+  {
+   "key": "pr_sty_2",
+   "name": "Style 2",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "display": "string"
+  },
+  {
+   "key": "pr_sty_3",
+   "name": "Style 3",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "display": "string"
+  },
+  {
+   "key": "pr_sty_4",
+   "name": "Style 4",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "display": "string"
+  },
+  {
+   "key": "pr_sty_5",
+   "name": "Style 5",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "display": "string"
+  },
+  {
+   "key": "pr_sty_6",
+   "name": "Style 6",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "display": "string"
+  },
+  {
+   "key": "pr_sty_7",
+   "name": "Style 7",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "display": "string"
+  },
+  {
+   "key": "pr_sty_8",
+   "name": "Style 8",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "display": "string"
+  },
+  {
+   "key": "pr_sty_9",
+   "name": "Style 9",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "display": "string"
+  },
+  {
+   "key": "pr_sty_10",
+   "name": "Style 10",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "display": "string"
+  },
+  {
+   "key": "pr_sty_11",
+   "name": "Style 11",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "display": "string"
+  },
+  {
+   "key": "pr_row_1",
+   "name": "Preset 1",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "display": "string"
+  },
+  {
+   "key": "pr_row_2",
+   "name": "Preset 2",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "display": "string"
+  },
+  {
+   "key": "pr_row_3",
+   "name": "Preset 3",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "display": "string"
+  },
+  {
+   "key": "pr_row_4",
+   "name": "Preset 4",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "display": "string"
+  },
+  {
+   "key": "pr_row_5",
+   "name": "Preset 5",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "display": "string"
+  },
+  {
+   "key": "pr_row_6",
+   "name": "Preset 6",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "display": "string"
+  },
+  {
+   "key": "pr_row_7",
+   "name": "Preset 7",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "display": "string"
+  },
+  {
+   "key": "pr_row_8",
+   "name": "Preset 8",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "display": "string"
+  },
+  {
+   "key": "pr_row_9",
+   "name": "Preset 9",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "display": "string"
+  },
+  {
+   "key": "pr_row_10",
+   "name": "Preset 10",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "display": "string"
+  },
+  {
+   "key": "pr_row_11",
+   "name": "Preset 11",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "display": "string"
+  },
+  {
+   "key": "pr_row_12",
+   "name": "Preset 12",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "display": "string"
+  },
+  {
+   "key": "pr_row_13",
+   "name": "Preset 13",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "display": "string"
+  },
+  {
+   "key": "pr_row_14",
+   "name": "Preset 14",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "display": "string"
+  },
+  {
+   "key": "pr_row_15",
+   "name": "Preset 15",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "display": "string"
+  },
+  {
+   "key": "pr_row_16",
+   "name": "Preset 16",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "display": "string"
+  },
+  {
+   "key": "pg_overview",
+   "name": "pg_overvie",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "pg_a_mix",
+   "name": "pg_a_mix",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "pg_a_fi",
+   "name": "pg_a_fi",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "pg_a_di",
+   "name": "pg_a_di",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "pg_a_de",
+   "name": "pg_a_de",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "pg_a_lo",
+   "name": "pg_a_lo",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "pg_a_fl",
+   "name": "pg_a_fl",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "pg_a_gl",
+   "name": "pg_a_gl",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "pg_b_mix",
+   "name": "pg_b_mix",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "pg_b_fi",
+   "name": "pg_b_fi",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "pg_b_di",
+   "name": "pg_b_di",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "pg_b_de",
+   "name": "pg_b_de",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "pg_b_lo",
+   "name": "pg_b_lo",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "pg_b_fl",
+   "name": "pg_b_fl",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "pg_b_gl",
+   "name": "pg_b_gl",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "pg_mod1",
+   "name": "pg_mod1",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "pg_mod2",
+   "name": "pg_mod2",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "pg_mod3",
+   "name": "pg_mod3",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "pg_mod4",
+   "name": "pg_mod4",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "pg_mod5",
+   "name": "pg_mod5",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "pg_mod6",
+   "name": "pg_mod6",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "pg_mod7",
+   "name": "pg_mod7",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "pg_mod8",
+   "name": "pg_mod8",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "pg_st1",
+   "name": "pg_st1",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "pg_st2",
+   "name": "pg_st2",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "pg_st3",
+   "name": "pg_st3",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "pg_st4",
+   "name": "pg_st4",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "pg_st5",
+   "name": "pg_st5",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "pg_st6",
+   "name": "pg_st6",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "pg_st7",
+   "name": "pg_st7",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "pg_st8",
+   "name": "pg_st8",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "pg_mx1",
+   "name": "pg_mx1",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "pg_mx2",
+   "name": "pg_mx2",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "pg_mx3",
+   "name": "pg_mx3",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "pg_mx4",
+   "name": "pg_mx4",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "pg_master1",
+   "name": "pg_master1",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "pg_master2",
+   "name": "pg_master2",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "pg_presets",
+   "name": "pg_presets",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "pm_a_de_a_desync_0",
+   "name": "pm_a_de_a_",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "pm_a_de_a_desync_1",
+   "name": "pm_a_de_a_",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "pm_a_fl_a_flsync_0",
+   "name": "pm_a_fl_a_",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "pm_a_fl_a_flsync_1",
+   "name": "pm_a_fl_a_",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "pm_b_de_b_desync_0",
+   "name": "pm_b_de_b_",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "pm_b_de_b_desync_1",
+   "name": "pm_b_de_b_",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "pm_b_fl_b_flsync_0",
+   "name": "pm_b_fl_b_",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "pm_b_fl_b_flsync_1",
+   "name": "pm_b_fl_b_",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "pm_mod1_m1_sync_0",
+   "name": "pm_mod1_m1",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "pm_mod1_m1_sync_1",
+   "name": "pm_mod1_m1",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "pm_mod2_m2_sync_0",
+   "name": "pm_mod2_m2",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "pm_mod2_m2_sync_1",
+   "name": "pm_mod2_m2",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "pm_mod3_m3_sync_0",
+   "name": "pm_mod3_m3",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "pm_mod3_m3_sync_1",
+   "name": "pm_mod3_m3",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "pm_mod4_m4_sync_0",
+   "name": "pm_mod4_m4",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "pm_mod4_m4_sync_1",
+   "name": "pm_mod4_m4",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "pm_mod5_m5_sync_0",
+   "name": "pm_mod5_m5",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "pm_mod5_m5_sync_1",
+   "name": "pm_mod5_m5",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "pm_mod6_m6_sync_0",
+   "name": "pm_mod6_m6",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "pm_mod6_m6_sync_1",
+   "name": "pm_mod6_m6",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "pm_mod7_m7_sync_0",
+   "name": "pm_mod7_m7",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "pm_mod7_m7_sync_1",
+   "name": "pm_mod7_m7",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "pm_mod8_m8_sync_0",
+   "name": "pm_mod8_m8",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "pm_mod8_m8_sync_1",
+   "name": "pm_mod8_m8",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "ql1",
+   "name": "Q-Link 1",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "ql2",
+   "name": "Q-Link 2",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "ql3",
+   "name": "Q-Link 3",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "ql4",
+   "name": "Q-Link 4",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "ql5",
+   "name": "Q-Link 5",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "ql6",
+   "name": "Q-Link 6",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "ql7",
+   "name": "Q-Link 7",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "ql8",
+   "name": "Q-Link 8",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "ql9",
+   "name": "Q-Link 9",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "ql10",
+   "name": "Q-Link 10",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "ql11",
+   "name": "Q-Link 11",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "ql12",
+   "name": "Q-Link 12",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "ql13",
+   "name": "Q-Link 13",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "ql14",
+   "name": "Q-Link 14",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "ql15",
+   "name": "Q-Link 15",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "ql16",
+   "name": "Q-Link 16",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "cap_overview",
+   "name": "OVERVIEW",
+   "min": 0.0,
+   "max": 0.0,
+   "default": 0.0,
+   "display": "string",
+   "poll": false
+  },
+  {
+   "key": "cap_lt",
+   "name": "<",
+   "min": 0.0,
+   "max": 0.0,
+   "default": 0.0,
+   "display": "string",
+   "poll": false
+  },
+  {
+   "key": "cap_gt",
+   "name": ">",
+   "min": 0.0,
+   "max": 0.0,
+   "default": 0.0,
+   "display": "string",
+   "poll": false
+  },
+  {
+   "key": "cap_layer_a",
+   "name": "LAYER A",
+   "min": 0.0,
+   "max": 0.0,
+   "default": 0.0,
+   "display": "string",
+   "poll": false
+  },
+  {
+   "key": "cap_mix",
+   "name": "MIX",
+   "min": 0.0,
+   "max": 0.0,
+   "default": 0.0,
+   "display": "string",
+   "poll": false
+  },
+  {
+   "key": "cap_filter",
+   "name": "FILTER",
+   "min": 0.0,
+   "max": 0.0,
+   "default": 0.0,
+   "display": "string",
+   "poll": false
+  },
+  {
+   "key": "cap_dist",
+   "name": "DIST",
+   "min": 0.0,
+   "max": 0.0,
+   "default": 0.0,
+   "display": "string",
+   "poll": false
+  },
+  {
+   "key": "cap_delay",
+   "name": "DELAY",
+   "min": 0.0,
+   "max": 0.0,
+   "default": 0.0,
+   "display": "string",
+   "poll": false
+  },
+  {
+   "key": "cap_lo_fi",
+   "name": "LO-FI",
+   "min": 0.0,
+   "max": 0.0,
+   "default": 0.0,
+   "display": "string",
+   "poll": false
+  },
+  {
+   "key": "cap_flanger",
+   "name": "FLANGER",
+   "min": 0.0,
+   "max": 0.0,
+   "default": 0.0,
+   "display": "string",
+   "poll": false
+  },
+  {
+   "key": "cap_glitch",
+   "name": "GLITCH",
+   "min": 0.0,
+   "max": 0.0,
+   "default": 0.0,
+   "display": "string",
+   "poll": false
+  },
+  {
+   "key": "cap_layer_b",
+   "name": "LAYER B",
+   "min": 0.0,
+   "max": 0.0,
+   "default": 0.0,
+   "display": "string",
+   "poll": false
+  },
+  {
+   "key": "cap_modulators",
+   "name": "MODULATORS",
+   "min": 0.0,
+   "max": 0.0,
+   "default": 0.0,
+   "display": "string",
+   "poll": false
+  },
+  {
+   "key": "cap_m1",
+   "name": "M1",
+   "min": 0.0,
+   "max": 0.0,
+   "default": 0.0,
+   "display": "string",
+   "poll": false
+  },
+  {
+   "key": "cap_m2",
+   "name": "M2",
+   "min": 0.0,
+   "max": 0.0,
+   "default": 0.0,
+   "display": "string",
+   "poll": false
+  },
+  {
+   "key": "cap_m3",
+   "name": "M3",
+   "min": 0.0,
+   "max": 0.0,
+   "default": 0.0,
+   "display": "string",
+   "poll": false
+  },
+  {
+   "key": "cap_m4",
+   "name": "M4",
+   "min": 0.0,
+   "max": 0.0,
+   "default": 0.0,
+   "display": "string",
+   "poll": false
+  },
+  {
+   "key": "cap_m5",
+   "name": "M5",
+   "min": 0.0,
+   "max": 0.0,
+   "default": 0.0,
+   "display": "string",
+   "poll": false
+  },
+  {
+   "key": "cap_m6",
+   "name": "M6",
+   "min": 0.0,
+   "max": 0.0,
+   "default": 0.0,
+   "display": "string",
+   "poll": false
+  },
+  {
+   "key": "cap_m7",
+   "name": "M7",
+   "min": 0.0,
+   "max": 0.0,
+   "default": 0.0,
+   "display": "string",
+   "poll": false
+  },
+  {
+   "key": "cap_m8",
+   "name": "M8",
+   "min": 0.0,
+   "max": 0.0,
+   "default": 0.0,
+   "display": "string",
+   "poll": false
+  },
+  {
+   "key": "cap_matrix",
+   "name": "MATRIX",
+   "min": 0.0,
+   "max": 0.0,
+   "default": 0.0,
+   "display": "string",
+   "poll": false
+  },
+  {
+   "key": "cap_1_6",
+   "name": "1-6",
+   "min": 0.0,
+   "max": 0.0,
+   "default": 0.0,
+   "display": "string",
+   "poll": false
+  },
+  {
+   "key": "cap_7_12",
+   "name": "7-12",
+   "min": 0.0,
+   "max": 0.0,
+   "default": 0.0,
+   "display": "string",
+   "poll": false
+  },
+  {
+   "key": "cap_13_18",
+   "name": "13-18",
+   "min": 0.0,
+   "max": 0.0,
+   "default": 0.0,
+   "display": "string",
+   "poll": false
+  },
+  {
+   "key": "cap_19_24",
+   "name": "19-24",
+   "min": 0.0,
+   "max": 0.0,
+   "default": 0.0,
+   "display": "string",
+   "poll": false
+  },
+  {
+   "key": "cap_master",
+   "name": "MASTER",
+   "min": 0.0,
+   "max": 0.0,
+   "default": 0.0,
+   "display": "string",
+   "poll": false
+  },
+  {
+   "key": "cap_eq_rev",
+   "name": "EQ+REV",
+   "min": 0.0,
+   "max": 0.0,
+   "default": 0.0,
+   "display": "string",
+   "poll": false
+  },
+  {
+   "key": "cap_output",
+   "name": "OUTPUT",
+   "min": 0.0,
+   "max": 0.0,
+   "default": 0.0,
+   "display": "string",
+   "poll": false
+  },
+  {
+   "key": "cap_slot_1",
+   "name": "SLOT 1",
+   "min": 0.0,
+   "max": 0.0,
+   "default": 0.0,
+   "display": "string",
+   "poll": false
+  },
+  {
+   "key": "cap_slot_2",
+   "name": "SLOT 2",
+   "min": 0.0,
+   "max": 0.0,
+   "default": 0.0,
+   "display": "string",
+   "poll": false
+  },
+  {
+   "key": "cap_slot_3",
+   "name": "SLOT 3",
+   "min": 0.0,
+   "max": 0.0,
+   "default": 0.0,
+   "display": "string",
+   "poll": false
+  },
+  {
+   "key": "cap_slot_4",
+   "name": "SLOT 4",
+   "min": 0.0,
+   "max": 0.0,
+   "default": 0.0,
+   "display": "string",
+   "poll": false
+  },
+  {
+   "key": "cap_slot_5",
+   "name": "SLOT 5",
+   "min": 0.0,
+   "max": 0.0,
+   "default": 0.0,
+   "display": "string",
+   "poll": false
+  },
+  {
+   "key": "cap_slot_6",
+   "name": "SLOT 6",
+   "min": 0.0,
+   "max": 0.0,
+   "default": 0.0,
+   "display": "string",
+   "poll": false
+  },
+  {
+   "key": "cap_type",
+   "name": "TYPE",
+   "min": 0.0,
+   "max": 0.0,
+   "default": 0.0,
+   "display": "string",
+   "poll": false
+  },
+  {
+   "key": "cap_div_l",
+   "name": "DIV L",
+   "min": 0.0,
+   "max": 0.0,
+   "default": 0.0,
+   "display": "string",
+   "poll": false
+  },
+  {
+   "key": "cap_div_r",
+   "name": "DIV R",
+   "min": 0.0,
+   "max": 0.0,
+   "default": 0.0,
+   "display": "string",
+   "poll": false
+  },
+  {
+   "key": "cap_sync_div",
+   "name": "SYNC DIV",
+   "min": 0.0,
+   "max": 0.0,
+   "default": 0.0,
+   "display": "string",
+   "poll": false
+  },
+  {
+   "key": "cap_trem_to",
+   "name": "TREM TO",
+   "min": 0.0,
+   "max": 0.0,
+   "default": 0.0,
+   "display": "string",
+   "poll": false
+  },
+  {
+   "key": "cap_flip_to",
+   "name": "FLIP TO",
+   "min": 0.0,
+   "max": 0.0,
+   "default": 0.0,
+   "display": "string",
+   "poll": false
+  },
+  {
+   "key": "cap_steps_gt",
+   "name": "STEPS >",
+   "min": 0.0,
+   "max": 0.0,
+   "default": 0.0,
+   "display": "string",
+   "poll": false
+  },
+  {
+   "key": "cap_lt_shape",
+   "name": "< SHAPE",
+   "min": 0.0,
+   "max": 0.0,
+   "default": 0.0,
+   "display": "string",
+   "poll": false
+  },
+  {
+   "key": "cap_source",
+   "name": "SOURCE",
+   "min": 0.0,
+   "max": 0.0,
+   "default": 0.0,
+   "display": "string",
+   "poll": false
+  },
+  {
+   "key": "cap_destination",
+   "name": "DESTINATIO",
+   "min": 0.0,
+   "max": 0.0,
+   "default": 0.0,
+   "display": "string",
+   "poll": false
+  },
+  {
+   "key": "cap_depth",
+   "name": "DEPTH",
+   "min": 0.0,
+   "max": 0.0,
+   "default": 0.0,
+   "display": "string",
+   "poll": false
+  },
+  {
+   "key": "cap_byp",
+   "name": "BYP",
+   "min": 0.0,
+   "max": 0.0,
+   "default": 0.0,
+   "display": "string",
+   "poll": false
+  },
+  {
+   "key": "cap_master_presets",
+   "name": "MASTER + P",
+   "min": 0.0,
+   "max": 0.0,
+   "default": 0.0,
+   "display": "string",
+   "poll": false
+  },
+  {
+   "key": "cap_presets",
+   "name": "PRESETS",
+   "min": 0.0,
+   "max": 0.0,
+   "default": 0.0,
+   "display": "string",
+   "poll": false
+  },
+  {
+   "key": "cap_rnd",
+   "name": "RND",
+   "min": 0.0,
+   "max": 0.0,
+   "default": 0.0,
+   "display": "string",
+   "poll": false
+  },
+  {
+   "key": "cap_amount",
+   "name": "AMOUNT",
+   "min": 0.0,
+   "max": 0.0,
+   "default": 0.0,
+   "display": "string",
+   "poll": false
+  },
+  {
+   "key": "cap_save",
+   "name": "SAVE",
+   "min": 0.0,
+   "max": 0.0,
+   "default": 0.0,
+   "display": "string",
+   "poll": false
+  },
+  {
+   "key": "cap_save_new",
+   "name": "SAVE NEW",
+   "min": 0.0,
+   "max": 0.0,
+   "default": 0.0,
+   "display": "string",
+   "poll": false
+  },
+  {
+   "key": "cap_delete",
+   "name": "DELETE",
+   "min": 0.0,
+   "max": 0.0,
+   "default": 0.0,
+   "display": "string",
+   "poll": false
+  }
+ ]
+}

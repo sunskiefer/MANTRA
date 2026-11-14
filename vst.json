@@ -1,0 +1,37 @@
+{
+  "name": "MANTRA",
+  "vendor": "L'Cronx",
+  "uid": "Mntr",
+  "version": 200,
+  "so": "mantra.so",
+  "params": "params.json",
+  "effect": true,
+  "build": {
+    "root": ".",
+    "sources": [
+      "src/engine.cc",
+      "src/step_touch.cc"
+    ],
+    "cflags": [
+      "-Isrc",
+      "-O2"
+    ],
+    "libs": [
+      "-lm",
+      "-ldl",
+      "-lpthread"
+    ]
+  },
+  "layout": "layout.conf",
+  "title_font": "art/fonts/TitilliumWeb-SemiBold.ttf",
+  "art": "html",
+  "defines": {
+    "HAS_SONG_POS": 1,
+    "HAS_DISPLAY_REV": 1,
+    "DISPLAY_REV_NO_UPDATE": 1,
+    "PARAM_TEXT_MAX": 64,
+    "MODULE_SUBDIR": "\"presets\""
+  },
+  "presets": "presets.json",
+  "tile": "art/tile.png"
+}

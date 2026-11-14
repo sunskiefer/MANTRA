@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>MANTRA panel editor</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+:root{--bg:#141414;--pn:#1c1c1c;--ln:#3a3a3a;--ink:#f2f2f2;--dim:#a8a8a8;--ac:#f0a828;--bad:#e5484d}
+*{box-sizing:border-box}
+body{margin:0;background:#0d0d0d;color:var(--ink);font:14px/1.3 "Titillium Web",system-ui,Segoe UI,Arial,sans-serif}
+.bar{display:flex;gap:8px;align-items:center;flex-wrap:wrap;padding:8px 10px;background:var(--pn);border-bottom:1px solid var(--ln)}
+.bar strong{color:var(--ac)}
+button,select,input{background:#262626;color:var(--ink);border:1px solid var(--ln);border-radius:5px;padding:5px 9px;font:inherit}
+button{cursor:pointer}button:hover{border-color:var(--ac)}button.on{background:var(--ac);color:#111;border-color:var(--ac)}
+input[type=number]{width:70px}input[type=text]{width:170px}
+.sp{flex:1}
+#wrap{overflow:auto;padding:10px}
+#stage{position:relative;width:1280px;height:628px;background:var(--bg);transform-origin:0 0;outline:1px solid #444;user-select:none;touch-action:none}
+#hdrline{position:absolute;left:0;right:0;top:70px;height:1px;background:#2c2c2c}
+.it{position:absolute;border:1px dashed #5a5a5a;border-radius:4px;cursor:move;overflow:hidden}
+.it.sel{border:2px solid var(--ac);z-index:5}
+.it.bad{border-color:var(--bad);background:rgba(229,72,77,.12)}
+.it.hid{opacity:.25}
+.it .nm{position:absolute;left:0;right:0;text-align:center;color:var(--ink);font-size:35.7px;white-space:nowrap;overflow:hidden;pointer-events:none}
+.it .vl{position:absolute;left:0;right:0;text-align:center;color:var(--dim);font-size:37.4px;pointer-events:none}
+.knob{position:absolute;border-radius:50%;background:#1a1a1a;border:3px dotted #3c3c3c;pointer-events:none}
+.knob i{position:absolute;left:18%;top:18%;width:12%;height:12%;border-radius:50%;background:var(--ac)}
+.pill{position:absolute;border-radius:6px;background:#0a0a0a;pointer-events:none}
+.pill i{position:absolute;left:3px;top:3px;bottom:3px;aspect-ratio:1;border-radius:50%;background:#554;pointer-events:none}
+.bar2{position:absolute;border-radius:14px;background:#060606;pointer-events:none}
+.bar2 i{position:absolute;background:var(--ac);pointer-events:none}
+.box{position:absolute;border:1px solid #444;background:#111;border-radius:3px;pointer-events:none}
+.tile{position:absolute;background:var(--ac);color:#111;border-radius:7px;box-shadow:0 2px 3px rgba(0,0,0,.55);text-align:center;font-weight:700;pointer-events:none;overflow:hidden;white-space:nowrap}
+.tile.sm{font-size:20px}
+.lst{position:absolute;border-radius:7px;box-shadow:0 2px 3px rgba(0,0,0,.55);pointer-events:none;color:#141414;font-size:26px;font-weight:700;padding:0 10px;overflow:hidden;white-space:nowrap}
+.handle{position:absolute;right:0;bottom:0;width:16px;height:16px;background:var(--ac);cursor:nwse-resize;z-index:9}
+#side{display:grid;grid-template-columns:repeat(4,auto);gap:6px 10px;align-items:center;padding:8px 10px;background:var(--pn);border-top:1px solid var(--ln)}
+#side label{display:flex;gap:5px;align-items:center;color:var(--dim)}
+#msg{padding:6px 10px;min-height:28px;color:var(--ac)}#msg.bad{color:var(--bad)}
+.legend{padding:4px 10px 12px;color:var(--dim);font-size:13px}
+dialog{background:var(--pn);color:var(--ink);border:1px solid var(--ac);border-radius:8px;min-width:420px}
+textarea{width:100%;height:160px;background:#101010;color:var(--ink);border:1px solid var(--ln);font:12px monospace}
+</style></head><body>
+<div class="bar"><strong>MANTRA panel editor</strong>
+  <button id="bPrev">&lt;</button><select id="pageSel"></select><button id="bNext">&gt;</button>
+  <span class="sp"></span>
+  <label>Snap <select id="snap"><option value="1">off</option><option value="2">2 px</option><option value="4">4 px</option><option value="5" selected>5 px</option><option value="10">10 px</option></select></label>
+  <label>Zoom <select id="zoom"><option value="0">fit</option><option value="1">100 %</option><option value="0.75">75 %</option></select></label>
+  <button id="bExp">Save layout (userlayout.json)</button>
+  <button id="bLoad">Load layout…</button>
+</div>
+<div class="bar">
+  <strong style="color:var(--dim)">ALIGN</strong>
+  <button data-al="l">Left</button><button data-al="c">Centre</button><button data-al="r">Right</button>
+  <button data-al="t">Top</button><button data-al="m">Middle</button><button data-al="b">Bottom</button>
+  <button data-al="dh">Space across</button><button data-al="dv">Space down</button>
+  <span class="sp"></span>
+  <button id="bAll">Select all (Ctrl+A)</button><button id="bNone">Clear (Esc)</button>
+  <button id="bAdd">+ Add control</button><button id="bDel">Delete / hide (Del)</button>
+  <button id="bResetSel">Reset selected</button><button id="bResetPage">Reset this page</button>
+</div>
+<div id="wrap"><div id="stage"></div></div>
+<div id="side"></div>
+<div id="msg"></div>
+<div class="legend">Drag a control to move it · drag the amber corner to resize (knobs: radius) · Ctrl/Shift-click adds to the selection · arrow keys nudge (Shift = 10 px) · red = touch boxes overlap or go past the screen (the Force would give the touch to one of them) · The top 70 px is the header (OVERVIEW, &lt; &gt;, page title) · Boxes show the real touch area, text sizes are the Meta4MPCXXL sizes. Pick a <b>colour</b> per control (red · green · blue · brown · black · grey) and swap a knob for a <b>fader</b> (or back) in the numbers row below; the whole-page colours come from the generator unless you change them here. Save the layout, put <b>userlayout.json</b> into <b>art/</b>, run <b>./build.sh</b>.</div>
+<dialog id="dlgAdd"><form method="dialog"><h3 style="margin-top:0;color:var(--ac)">Add a control to this page</h3>
+  <p><label>Type <select id="addKind"><option value="knob">Knob</option><option value="slider_h">Fader (horizontal)</option><option value="slider_v">Fader (vertical)</option><option value="toggle">Switch (2 options)</option><option value="popup">Menu (several options)</option></select></label></p>
+  <p><label>Parameter <select id="addKey" style="max-width:340px"></select></label></p>
+  <p><input id="addFilter" type="text" placeholder="filter, e.g. cutoff"></p>
+  <menu style="display:flex;gap:8px;justify-content:flex-end;padding:0"><button value="cancel">Cancel</button><button id="addOk" value="ok">Add</button></menu></form></dialog>
+<dialog id="dlgLoad"><form method="dialog"><h3 style="margin-top:0;color:var(--ac)">Load a layout</h3>
+  <p><input type="file" id="file" accept=".json,application/json"></p><p>…or paste userlayout.json here:</p><textarea id="paste" spellcheck="false"></textarea>
+  <menu style="display:flex;gap:8px;justify-content:flex-end;padding:0"><button value="cancel">Cancel</button><button id="loadOk" value="ok">Load</button></menu></form></dialog>
+<script>
+"use strict";
+const DEFAULT = __DEFAULT__;       // the generator's layout
+const NAMES = __NAMES__;           // key -> param name drawn under knobs / switches
+const ADDABLE = __ADDABLE__;       // key -> [name, class]
+const INITIAL = __INITIAL__;       // art/userlayout.json at build time, or null
+const ADDOK = {knob:["cont"],slider_h:["cont","int","step"],slider_v:["cont","int","step"],toggle:["enum2"],popup:["enum"]};
+const KEEP = ["x","y","w","h","r","cap_y","label","hidden","colour"];
+const COLS = {red:"#d64545",green:"#3bb369",blue:"#3b82d6",brown:"#8a5a3a",black:"#2a2a2a",grey:"#b4b6ba"};   // the six colours of the knob / key / cap pictures (never yellow)
+const SWAP = ["knob","slider_h"];                   // a continuous control may be a knob or a fader
+const HASCOL = ["knob","slider_h","toggle","popup","tile","button","list"];
+const colOf = it => COLS[it.colour] ? it.colour : "grey";
+const canSwap = it => SWAP.includes(it.kind) && !it.alt && ADDABLE[it.key] && ADDABLE[it.key][1]==="cont";
+const $ = id => document.getElementById(id);
+const clone = o => JSON.parse(JSON.stringify(o));
+const SK = "mantra-panel-layout-" + JSON.stringify(DEFAULT).length;
+let L = clone(DEFAULT), page = 0, snapV = 5, sel = new Set(), msgT = 0;
+// pages: index 0..N-1 = DEFAULT.pages, N = header
+const PAGES = () => L.pages.map(p => ({id:p.id,title:p.title,items:p.items})).concat([{id:"hdr",title:"HEADER (every page)",items:L.header}]);
+
+function applyUser(u){
+  if(!u) return;
+  const up = {};
+  (u.pages||[]).concat([{id:"hdr",items:u.header||[]}]).forEach(p=>(p.items||[]).forEach(it=>{up[p.id+"|"+it.key+"|"+(it.alt_sel||"")]=it;}));
+  PAGES().forEach(p=>p.items.forEach(it=>{const o=up[p.id+"|"+it.key+"|"+(it.alt_sel||"")]; if(!o) return;
+    KEEP.forEach(k=>{if(k in o) it[k]=o[k];}); if(o.kind&&o.kind!==it.kind&&SWAP.includes(o.kind)&&canSwap(it)) it.kind=o.kind; if(it.alt&&o.alt) KEEP.forEach(k=>{if(k in o.alt) it.alt[k]=o.alt[k];});}));
+  (u.pages||[]).forEach(p=>{const t=L.pages.find(q=>q.id===p.id); if(!t) return;
+    (p.items||[]).forEach(it=>{ if(!it.user) return; if(it.colour&&!COLS[it.colour]) delete it.colour;
+      const a=ADDABLE[it.key]; if(!a||!ADDOK[it.kind]||!ADDOK[it.kind].includes(a[1])) return;
+      if(!t.items.some(x=>x.user&&x.key===it.key&&x.kind===it.kind&&x.x===it.x&&x.y===it.y)) t.items.push(clone(it)); });});
+}
+function save(){ try{localStorage.setItem(SK,JSON.stringify(L));}catch(e){} }
+function say(t,bad){const m=$("msg"); m.textContent=t||""; m.className=bad?"bad":"";}
+
+// ---------- geometry (what the Force draws; mirrors tools/gen_force.py + shadow_skin.py)
+function boxOf(it){
+  const k=it.kind,x=it.x,y=it.y;
+  if(k==="knob"){const r=it.r||40,s=2*r+10;return {x:x-110,y:y-r-5,w:221,h:s+48+44};}
+  if(k==="toggle"){ if(it.noname) return {x:x-20,y:y-28,w:40,h:56}; const w=Math.max(Math.min(it.w||170,236),72); return {x:x-w/2,y:y-43,w:w,h:140};}   // key picture 62 x 86 centred on y, name (35.7 px) below
+  if(k==="slider_h"){const sw=it.w||200,h=it.h||50,nn=(it.label==="DEPTH"||it.label==="DESTINATION"),w=nn?sw:Math.max(sw,200);return {x:x-w/2,y:y-h/2,w:w,h:h+(nn?52:97)};}   // slider + name (36 px, 43 high) + value (37 px, 44 high)
+  if(k==="list"){const rows=it.rows||1,th=it.th||44,gap=it.gap||0;return {x:x,y:y,w:it.w||270,h:rows*th+(rows-1)*gap};}
+  if(k==="slider_v"){const w=it.w||34,h=it.h||350;return {x:x-w/2,y:y-h/2,w:w+2,h:h+30};}
+  if(k==="popup"){const w=it.w||210,h=it.h||52;return {x:x-w/2,y:y-h/2,w:w,h:h};}
+  if(k==="tile"||k==="button"){const w=it.w||150,h=it.h||60;return {x:x-w/2,y:y-h/2,w:w,h:h};}
+  if(k==="caption"||k==="readout"){const w=it.w||240,h=it.h||36;return {x:x-w/2,y:y-h/2,w:w,h:h};}
+  return {x:x-50,y:y-20,w:100,h:40};
+}
+function capBox(it){ if(it.kind!=="popup"||it.nocap) return null; const w=it.w||210; const cy=("cap_y" in it)?it.cap_y:it.y-44; return {x:it.x-w/2,y:cy-18,w:w,h:36}; }
+function touchable(it){return it.kind!=="caption"&&it.kind!=="readout";}
+
+// ---------- drawing
+const stage=$("stage");
+function fit(){ const z=+$("zoom").value; const sc=z? z : Math.min(1,(window.innerWidth-30)/1280); stage.style.transform="scale("+sc+")"; stage.parentElement.style.height=(628*sc+24)+"px"; stage._sc=sc; }
+function overlapSet(items){
+  const bad=new Set(); const bs=items.map((it,i)=>({i,b:boxOf(it),t:touchable(it)&&!it.hidden}));
+  bs.forEach(a=>{ if(!a.t) return; const b=a.b; if(b.x<0||b.y<0||b.x+b.w>1280||b.y+b.h>628) bad.add(a.i); });
+  for(let i=0;i<bs.length;i++)for(let j=i+1;j<bs.length;j++){ if(!bs[i].t||!bs[j].t) continue;
+    const a=bs[i].b,b=bs[j].b; const ox=Math.min(a.x+a.w,b.x+b.w)-Math.max(a.x,b.x), oy=Math.min(a.y+a.h,b.y+b.h)-Math.max(a.y,b.y);
+    if(ox>4&&oy>4){bad.add(i);bad.add(j);} }
+  return bad;
+}
+function curItems(){ return PAGES()[page].items; }
+function el(c,css,html){const d=document.createElement("div");d.className=c;Object.assign(d.style,css||{});if(html!=null)d.innerHTML=html;return d;}
+function render(){
+  const P=PAGES()[page]; const items=P.items; const bad=overlapSet(items.concat(page<L.pages.length?L.header:[]));
+  stage.innerHTML="";
+  const hl=el("",{position:"absolute",left:0,right:0,top:"70px",height:"1px",background:"#2c2c2c"}); stage.appendChild(hl);
+  if(page<L.pages.length){ L.header.forEach(it=>{ const d=draw(it,true); d.style.opacity=.35; d.style.pointerEvents="none"; stage.appendChild(d); }); }
+  items.forEach((it,i)=>{ const d=draw(it,false); d.dataset.i=i; if(sel.has(i)) d.classList.add("sel"); if(bad.has(i)) d.classList.add("bad"); if(it.hidden) d.classList.add("hid");
+    stage.appendChild(d); wire(d,i);
+    const cb=capBox(it); if(cb){ const c=el("it",{left:cb.x+"px",top:cb.y+"px",width:cb.w+"px",height:cb.h+"px",border:"1px dotted #666",cursor:"ns-resize"}); c.innerHTML='<div class="nm" style="top:2px;font-size:26px;font-weight:700;color:#ddd">'+esc(it.label||"")+'</div>'; c.dataset.cap=i; wireCap(c,i); stage.appendChild(c);} });
+  $("pageSel").value=page; inspector(); fit();
+}
+function esc(s){return String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));}
+function draw(it,hdr){
+  const b=boxOf(it); const d=el("it",{left:b.x+"px",top:b.y+"px",width:b.w+"px",height:b.h+"px"}); const k=it.kind;
+  const nm=NAMES[it.key]||it.label||it.key;
+  if(k==="knob"){const r=it.r||40,s=2*r+10; const kn=el("knob",{left:(b.w-2*r)/2+"px",top:"5px",width:2*r+"px",height:2*r+"px"},'<i style="background:'+COLS[colOf(it)]+'"></i>'); d.appendChild(kn);
+    d.appendChild(el("nm",{top:s+"px",height:"48px",lineHeight:"48px"},esc(nm))); d.appendChild(el("vl",{top:(s+48)+"px",height:"44px",lineHeight:"44px"},"50 %"));}
+  else if(k==="toggle"){ d.appendChild(el("tile",{left:((b.w-(it.noname?40:62))/2)+"px",top:"0px",width:(it.noname?40:62)+"px",height:(it.noname?56:86)+"px",background:COLS[colOf(it)],opacity:.85,borderRadius:"8px"},"")); if(!it.noname) d.appendChild(el("nm",{top:"92px",height:"48px",lineHeight:"48px"},esc(nm))); }
+  else if(k==="slider_h"){const sw=it.w||200,h=it.h||50,nn=(it.label==="DEPTH"||it.label==="DESTINATION"); d.appendChild(el("bar2",{left:((b.w-sw)/2)+"px",top:0,width:sw+"px",height:h+"px",background:"#2b2b2b"},'<i style="left:4px;top:'+(h/2-3)+'px;width:'+(sw*.3)+'px;height:6px;background:'+COLS[colOf(it)]+'"></i><i style="left:'+(sw*.3-10)+'px;top:'+(h/2-14)+'px;width:20px;height:28px;border-radius:4px;background:'+COLS[colOf(it)]+'"></i>')); if(!nn) d.appendChild(el("nm",{top:(h+2)+"px",height:"43px",lineHeight:"43px",fontSize:"36px"},esc(nm))); d.appendChild(el("vl",{top:(h+2+(nn?0:45))+"px",height:"44px",lineHeight:"44px"},"50 %"));}
+  else if(k==="slider_v"){const w=it.w||34,h=it.h||350; d.appendChild(el("bar2",{left:0,top:0,width:w+"px",height:h+"px"},'<i style="left:'+(w/2-3)+'px;bottom:6px;width:6px;height:'+(h*.45)+'px;background:#3bb369"></i>')); d.appendChild(el("vl",{top:(h+2)+"px",height:"26px",lineHeight:"26px",fontSize:"14px"},""));}
+  else if(k==="popup"){ d.appendChild(el("box",{left:0,top:0,right:0,bottom:0,background:"#111",borderColor:COLS[colOf(it)]},"")); d.appendChild(el("nm",{top:"0",height:b.h+"px",lineHeight:b.h+"px",fontSize:"28px",color:COLS[colOf(it)]},"▾ "+esc(nm)));}
+  else if(k==="list"){ const cols=it.cols||1,rows=it.rows||1,th=it.th||44,gap=it.gap||0,tw=((it.w||270)-(cols-1)*gap)/cols;
+    for(let r=0;r<rows;r++)for(let c=0;c<cols;c++) d.appendChild(el("lst",{left:(c*(tw+gap))+"px",top:(r*(th+gap))+"px",width:tw+"px",height:th+"px",lineHeight:th+"px",background:COLS[colOf(it)]},esc((it.label||"")+" "+(r*cols+c+1)))); }
+  else if(k==="tile"||k==="button"){ d.appendChild(el("tile",{left:0,top:0,right:0,bottom:0,fontSize:"26px",lineHeight:b.h+"px",background:COLS[colOf(it)]},esc(it.label||nm)));}
+  else if(k==="caption"){ d.appendChild(el("nm",{top:0,height:b.h+"px",lineHeight:b.h+"px",fontWeight:700,fontSize:"26px"},esc(it.label)));}
+  else if(k==="readout"){ d.appendChild(el("nm",{top:0,left:"10px",textAlign:it.talign||"left",height:b.h+"px",lineHeight:b.h+"px",fontWeight:700,fontSize:Math.min(it.tsize||34,34)+"px",color:"#ccc"},({page_title:"PAGE TITLE",pr_cur:"PRESET NAME",pr_info:"PAGE 1 / 19"})[it.key]||esc(it.key))); }
+  if(!hdr&&(k==="knob"||k==="slider_h"||k==="slider_v"||k==="toggle"||k==="popup")&&it.alt) d.appendChild(el("",{position:"absolute",right:"2px",top:"1px",fontSize:"11px",color:"var(--ac)"},"pair"));
+  if(!hdr&&it.user) d.appendChild(el("",{position:"absolute",left:"2px",top:"1px",fontSize:"11px",color:"#7c7"},"new"));
+  return d;
+}
+// ---------- interaction (window-level pointer events, so re-drawing while dragging is safe)
+let drag=null;
+function pt(ev){const r=stage.getBoundingClientRect(); const sc=stage._sc||1; return {x:(ev.clientX-r.left)/sc,y:(ev.clientY-r.top)/sc};}
+function sn(v){return Math.round(v/snapV)*snapV;}
+function wire(d,i){
+  d.addEventListener("pointerdown",ev=>{ if(ev.button!==0) return; ev.preventDefault();
+    if(ev.ctrlKey||ev.shiftKey||ev.metaKey){ sel.has(i)?sel.delete(i):sel.add(i); } else if(!sel.has(i)){ sel.clear(); sel.add(i); }
+    const items=curItems(); drag={mode:"move",p0:pt(ev),start:[...sel].map(j=>({j,x:items[j].x,y:items[j].y,cy:items[j].cap_y})),moved:false};
+    render(); });
+  if(sel.size===1&&sel.has(i)&&curItems()[i].kind!=="list"){ const h=el("handle"); h.addEventListener("pointerdown",ev=>{ev.stopPropagation();ev.preventDefault();const it=curItems()[i];drag={mode:"size",i,p0:pt(ev),w:it.w,h:it.h,r:it.r,bw:boxOf(it).w,bh:boxOf(it).h};});
+    d.appendChild(h); }
+}
+function wireCap(c,i){ c.addEventListener("pointerdown",ev=>{ ev.preventDefault(); ev.stopPropagation(); const it=curItems()[i]; drag={mode:"cap",i,p0:pt(ev),cy:("cap_y" in it)?it.cap_y:it.y-44};}); }
+window.addEventListener("pointermove",ev=>{ if(!drag) return; const p=pt(ev), items=curItems(); drag.moved=true;
+  if(drag.mode==="move"){ const dx=p.x-drag.p0.x, dy=p.y-drag.p0.y; drag.start.forEach(s=>{ const it=items[s.j]; it.x=Math.round(sn(s.x+dx)); it.y=Math.round(sn(s.y+dy)); if(s.cy!=null) it.cap_y=Math.round(sn(s.cy+dy)); }); }
+  else if(drag.mode==="size"){ const it=items[drag.i],dx=p.x-drag.p0.x,dy=p.y-drag.p0.y;
+    if(it.kind==="knob") it.r=Math.max(20,Math.min(70,Math.round(sn((drag.r||40)+Math.max(dx,dy)/2))));
+    else { it.w=Math.max(30,Math.round(sn((drag.w||drag.bw)+dx))); it.h=Math.max(20,Math.round(sn((drag.h||drag.bh)+dy))); } }
+  else if(drag.mode==="cap"){ items[drag.i].cap_y=Math.round(sn(drag.cy+p.y-drag.p0.y)); }
+  else if(drag.mode==="band"){ const q=p,p0=drag.p0; Object.assign(drag.band.style,{left:Math.min(p0.x,q.x)+"px",top:Math.min(p0.y,q.y)+"px",width:Math.abs(q.x-p0.x)+"px",height:Math.abs(q.y-p0.y)+"px"}); return; }
+  fastRender(); });
+window.addEventListener("pointerup",ev=>{ if(!drag) return; const d=drag; drag=null;
+  if(d.mode==="band"){ const q=pt(ev),p0=d.p0; const x0=Math.min(p0.x,q.x),x1=Math.max(p0.x,q.x),y0=Math.min(p0.y,q.y),y1=Math.max(p0.y,q.y);
+    curItems().forEach((it,i)=>{const b=boxOf(it); if(b.x<x1&&b.x+b.w>x0&&b.y<y1&&b.y+b.h>y0) sel.add(i);}); render(); return; }
+  save(); render(); });
+let raf=0; function fastRender(){ if(raf) return; raf=requestAnimationFrame(()=>{raf=0; render();}); }
+stage.addEventListener("pointerdown",ev=>{ if(ev.target!==stage) return; const p=pt(ev); if(!(ev.ctrlKey||ev.shiftKey)) sel.clear();
+  const band=el("",{position:"absolute",border:"1px dashed var(--ac)",background:"rgba(240,168,40,.1)",left:p.x+"px",top:p.y+"px",width:0,height:0,zIndex:20,pointerEvents:"none"}); stage.appendChild(band);
+  drag={mode:"band",p0:p,band}; });
+// ---------- inspector
+function inspector(){
+  const S=$("side"); const items=curItems(); const idx=[...sel].filter(i=>items[i]); S.innerHTML="";
+  if(!idx.length){ S.innerHTML='<span style="grid-column:1/-1;color:var(--dim)">Select a control to edit its numbers. '+items.length+' controls on this page.</span>'; return; }
+  const it=items[idx[0]]; const f=(k,l)=>'<label>'+l+'<input type="number" id="f_'+k+'" value="'+(it[k]!=null?it[k]:"")+'" step="1"></label>';
+  S.innerHTML='<span style="grid-column:1/-1"><b style="color:var(--ac)">'+idx.length+' selected</b> · '+esc(it.kind)+' · <code>'+esc(it.key)+'</code>'+(it.alt?' · pair with <code>'+esc(it.alt.key)+'</code>':'')+'</span>'+f("x","x")+f("y","y")+
+    (it.kind==="knob"?f("r","radius"):f("w","width")+f("h","height"))+
+    (["tile","button","caption","popup"].includes(it.kind)?'<label>text <input type="text" id="f_label" value="'+esc(it.label||"")+'"></label>':"")+
+    (HASCOL.includes(it.kind)?'<label>colour <select id="f_colour">'+Object.keys(COLS).map(c=>'<option value="'+c+'"'+(colOf(it)===c?" selected":"")+'>'+c+'</option>').join("")+'</select></label>':"")+
+    (idx.length===1&&canSwap(it)?'<label>type <select id="f_type"><option value="knob"'+(it.kind==="knob"?" selected":"")+'>knob</option><option value="slider_h"'+(it.kind==="slider_h"?" selected":"")+'>fader</option></select></label>':"")+
+    '<label><input type="checkbox" id="f_hidden" '+(it.hidden?"checked":"")+'> hidden</label>';
+  const fc=$("f_colour"); if(fc) fc.onchange=()=>{ idx.forEach(i=>{ if(HASCOL.includes(items[i].kind)){ items[i].colour=fc.value; if(items[i].alt) items[i].alt.colour=fc.value; } }); save(); render(); };
+  const ft=$("f_type"); if(ft) ft.onchange=()=>{ const t=items[idx[0]]; t.kind=ft.value; if(t.kind==="slider_h"){ if(t.w==null) t.w=200; if(t.h==null) t.h=50; } else if(t.r==null) t.r=40; save(); render(); say(t.kind==="slider_h"?"Now a fader (it keeps its Q-Link and colour).":"Now a knob."); };
+  ["x","y","r","w","h"].forEach(k=>{const e=$("f_"+k); if(e) e.onchange=()=>{ idx.forEach(i=>{items[i][k]=Math.round(+e.value||0);}); save(); render(); }; });
+  const lb=$("f_label"); if(lb) lb.onchange=()=>{ items[idx[0]].label=lb.value; save(); render(); };
+  $("f_hidden").onchange=e=>{ idx.forEach(i=>{items[i].hidden=e.target.checked;}); save(); render(); };
+}
+// ---------- toolbar
+function align(m){
+  const items=curItems(); const idx=[...sel]; if(idx.length<2){ say("Select two or more controls first.",true); return; }
+  const bs=idx.map(i=>({i,b:boxOf(items[i])})); const L0=Math.min(...bs.map(o=>o.b.x)),R0=Math.max(...bs.map(o=>o.b.x+o.b.w)),T0=Math.min(...bs.map(o=>o.b.y)),B0=Math.max(...bs.map(o=>o.b.y+o.b.h));
+  if(m==="dh"||m==="dv"){ const v=m==="dh"; bs.sort((a,b)=>v?a.b.x-b.b.x:a.b.y-b.b.y); const first=v?bs[0].b.x:bs[0].b.y, last=v?bs[bs.length-1].b.x:bs[bs.length-1].b.y;
+    bs.forEach((o,k)=>{const t=first+(last-first)*k/(bs.length-1); const d=t-(v?o.b.x:o.b.y); items[o.i][v?"x":"y"]=Math.round(items[o.i][v?"x":"y"]+d);}); }
+  else bs.forEach(o=>{const it=items[o.i],b=o.b; if(m==="l") it.x=Math.round(it.x+(L0-b.x)); if(m==="r") it.x=Math.round(it.x+(R0-b.x-b.w)); if(m==="c") it.x=Math.round(it.x+((L0+R0)/2-(b.x+b.w/2)));
+    if(m==="t") it.y=Math.round(it.y+(T0-b.y)); if(m==="b") it.y=Math.round(it.y+(B0-b.y-b.h)); if(m==="m") it.y=Math.round(it.y+((T0+B0)/2-(b.y+b.h/2))); });
+  save(); render();
+}
+document.querySelectorAll("[data-al]").forEach(b=>b.onclick=()=>align(b.dataset.al));
+$("bAll").onclick=()=>{ sel=new Set(curItems().map((_,i)=>i)); render(); };
+$("bNone").onclick=()=>{ sel.clear(); render(); };
+$("bDel").onclick=delSel;
+function delSel(){ const items=curItems(); [...sel].sort((a,b)=>b-a).forEach(i=>{ if(items[i].user) items.splice(i,1); else items[i].hidden=true; }); sel.clear(); save(); render(); say("Deleted (controls from the original set are hidden, not lost: untick 'hidden' to bring one back)."); }
+function defOf(it){ const P=DEFAULT.pages.concat([{id:"hdr",items:DEFAULT.header}]); const pid=PAGES()[page].id; const p=P.find(q=>q.id===pid); return p&&p.items.find(x=>x.key===it.key&&(x.alt_sel||"")===(it.alt_sel||"")); }
+$("bResetSel").onclick=()=>{ const items=curItems(); [...sel].forEach(i=>{const d=defOf(items[i]); if(d){ KEEP.forEach(k=>{ if(k in d) items[i][k]=d[k]; else delete items[i][k]; }); if(items[i].alt&&d.alt) KEEP.forEach(k=>{ if(k in d.alt) items[i].alt[k]=d.alt[k]; }); }}); save(); render(); };
+$("bResetPage").onclick=()=>{ const P=PAGES()[page]; const d=DEFAULT.pages.concat([{id:"hdr",items:DEFAULT.header}]).find(q=>q.id===P.id); P.items.length=0; clone(d.items).forEach(x=>P.items.push(x)); sel.clear(); save(); render(); say("Page reset to the default layout."); };
+$("snap").onchange=()=>{snapV=+$("snap").value;}; $("zoom").onchange=fit; window.addEventListener("resize",fit);
+$("bPrev").onclick=()=>go(page-1); $("bNext").onclick=()=>go(page+1);
+function go(n){ const N=PAGES().length; page=(n+N)%N; sel.clear(); render(); }
+$("pageSel").onchange=()=>go(+$("pageSel").value);
+document.addEventListener("keydown",ev=>{ if(/INPUT|TEXTAREA|SELECT/.test(ev.target.tagName)) return; const items=curItems();
+  if(ev.key==="Escape"){sel.clear();render();return;} if((ev.ctrlKey||ev.metaKey)&&ev.key.toLowerCase()==="a"){ev.preventDefault();$("bAll").click();return;}
+  if(ev.key==="Delete"||ev.key==="Backspace"){delSel();return;}
+  const st=ev.shiftKey?10:1, m={ArrowLeft:[-st,0],ArrowRight:[st,0],ArrowUp:[0,-st],ArrowDown:[0,st]}[ev.key]; if(!m||!sel.size) return; ev.preventDefault();
+  sel.forEach(i=>{const it=items[i]; if(!it) return; it.x+=m[0]; it.y+=m[1]; if(it.cap_y!=null) it.cap_y+=m[1];}); save(); render(); });
+// ---------- add control
+function fillKeys(){ const kind=$("addKind").value, f=$("addFilter").value.toLowerCase(); const o=$("addKey"); o.innerHTML="";
+  Object.keys(ADDABLE).filter(k=>ADDOK[kind].includes(ADDABLE[k][1])&&(k+" "+ADDABLE[k][0]).toLowerCase().includes(f)).slice(0,400).forEach(k=>{const e=document.createElement("option"); e.value=k; e.textContent=ADDABLE[k][0]+"  ("+k+")"; o.appendChild(e);}); }
+$("bAdd").onclick=()=>{ if(page>=L.pages.length){say("Controls are added to a page, not to the header.",true);return;} fillKeys(); $("dlgAdd").showModal(); };
+$("addKind").onchange=fillKeys; $("addFilter").oninput=fillKeys;
+$("addOk").onclick=()=>{ const kind=$("addKind").value,key=$("addKey").value; if(!key) return; const it={kind,key,label:ADDABLE[key][0],user:true,x:640,y:330}; const pc=curItems().find(q=>q.colour&&q.kind!=="tile"&&!q.hdr); it.colour=pc?pc.colour:"grey";
+  if(kind==="knob") it.r=40; else if(kind==="slider_h"){it.w=300;it.h=34;} else if(kind==="slider_v"){it.w=34;it.h=300;} else if(kind==="toggle"){it.w=170;it.h=82;} else {it.w=210;it.h=52;it.cap_y=286;}
+  const items=curItems(); items.push(it); sel=new Set([items.length-1]); save(); render(); say("Added. Drag it where you want it; it goes last in the Q-Link order."); };
+// ---------- save / load
+function exportLayout(){ const out={version:1,screen:[1280,628],header:L.header.map(clean),pages:L.pages.map(p=>({id:p.id,items:p.items.map(clean)}))};
+  const txt=JSON.stringify(out,null,1); const blob=new Blob([txt],{type:"application/json"}); const a=document.createElement("a"); a.href=URL.createObjectURL(blob); a.download="userlayout.json"; document.body.appendChild(a); a.click(); a.remove();
+  say("Saved userlayout.json. Put it into the art/ folder and run ./build.sh."); }
+function clean(it){ const o={kind:it.kind,key:it.key}; if(it.alt_sel) o.alt_sel=it.alt_sel; ["x","y","w","h","r","cap_y","label","hidden","user","colour"].forEach(k=>{if(it[k]!=null) o[k]=it[k];}); if(it.alt){o.alt={}; KEEP.forEach(k=>{if(it.alt[k]!=null) o.alt[k]=it.alt[k];});} return o; }
+$("bExp").onclick=exportLayout; $("bLoad").onclick=()=>$("dlgLoad").showModal();
+$("loadOk").onclick=async()=>{ let t=$("paste").value.trim(); const f=$("file").files[0]; if(f) t=await f.text(); if(!t) return; try{ const u=JSON.parse(t); L=clone(DEFAULT); applyUser(u); save(); sel.clear(); render(); say("Layout loaded."); }catch(e){ say("Not a valid layout file: "+e.message,true);} };
+// ---------- start
+(function(){ const sel0=$("pageSel"); PAGES().forEach((p,i)=>{const o=document.createElement("option"); o.value=i; o.textContent=(i<DEFAULT.pages.length?String(i).padStart(2,"0")+"  ":"")+p.title; sel0.appendChild(o);});
+  let u=null; try{ const s=localStorage.getItem(SK); if(s) u=JSON.parse(s);}catch(e){}
+  if(u&&u.pages&&u.pages.length===L.pages.length){ L=u; } else if(INITIAL) applyUser(INITIAL);
+  render(); })();
+</script></body></html>
