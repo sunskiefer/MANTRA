@@ -1,0 +1,18 @@
+name: publish release
+on:
+  push:
+    branches: [release-assets]
+permissions:
+  contents: write
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: check the zip and publish
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          echo "b4a09c7f9283b2d75c2fc67c0db1ddc6d50c5323d6c7e92a7ac4f9b01237f548  MANTRA-0.2.0-mpc-armv7.zip" | sha256sum -c -
+          if gh release view v0.2.0 >/dev/null 2>&1; then echo "v0.2.0 already published"; exit 0; fi
+          gh release create v0.2.0 MANTRA-0.2.0-mpc-armv7.zip --target 0a171fe16a85bd2ece9d210030d46e512e197ea5 --title "MANTRA 0.2.0" --notes-file notes-0.2.0.md
