@@ -9,10 +9,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - name: check the zip and publish
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           echo "b4a09c7f9283b2d75c2fc67c0db1ddc6d50c5323d6c7e92a7ac4f9b01237f548  MANTRA-0.2.0-mpc-armv7.zip" | sha256sum -c -
-          if gh release view v0.2.0 >/dev/null 2>&1; then echo "v0.2.0 already published"; exit 0; fi
-          gh release create v0.2.0 MANTRA-0.2.0-mpc-armv7.zip --target 0a171fe16a85bd2ece9d210030d46e512e197ea5 --title "MANTRA 0.2.0" --notes-file notes-0.2.0.md
+          if ! gh release view v0.2.0 >/dev/null 2>&1; then
+            gh release create v0.2.0 MANTRA-0.2.0-mpc-armv7.zip --target d5e76f0e5b919950c408883fa2cb4557c7b5903b --title "MANTRA 0.2.0" --notes-file notes-0.2.0.md
+          fi
+          # v0.2.0 -> the commit that adds docs/screenshots (docs only; same source, same zip)
+          git fetch origin main
+          git tag -f v0.2.0 d5e76f0e5b919950c408883fa2cb4557c7b5903b
+          git push -f origin v0.2.0
